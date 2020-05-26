@@ -1,0 +1,103 @@
+16:32:32 **** Incremental Build of configuration Debug for project testH743-2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.o"
+../Src/main.c: In function 'main':
+../Src/main.c:83:3: warning: implicit declaration of function 'CPU_CACHE_Enable'; did you mean 'LL_ADC_Enable'? [-Wimplicit-function-declaration]
+   CPU_CACHE_Enable();
+   ^~~~~~~~~~~~~~~~
+   LL_ADC_Enable
+../Src/main.c:92:3: warning: implicit declaration of function 'SystemClock_Config1'; did you mean 'SystemClock_Config'? [-Wimplicit-function-declaration]
+   SystemClock_Config1();
+   ^~~~~~~~~~~~~~~~~~~
+   SystemClock_Config
+../Src/main.c:113:6: warning: "/*" within comment [-Wcomment]
+      /* Counter Enable Error */
+       
+../Src/main.c: At top level:
+../Src/main.c:116:2: error: expected identifier or '(' before '/' token
+ */
+  ^
+../Src/main.c:133:3: error: expected identifier or '(' before 'while'
+   while (1)
+   ^~~~~
+../Src/main.c:142:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+../Src/main.c:451:6: warning: conflicting types for 'SystemClock_Config1'
+ void SystemClock_Config1(void)
+      ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:92:3: note: previous implicit declaration of 'SystemClock_Config1' was here
+   SystemClock_Config1();
+   ^~~~~~~~~~~~~~~~~~~
+../Src/main.c: In function 'TIM_Config':
+../Src/main.c:647:3: error: unknown type name 'TIM_MasterConfigTypeDef'; did you mean 'HRTIM_Master_TypeDef'?
+   TIM_MasterConfigTypeDef master_timer_config;
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   HRTIM_Master_TypeDef
+../Src/main.c:677:3: error: 'htim3' undeclared (first use in this function)
+   htim3.Instance = TIM3;
+   ^~~~~
+../Src/main.c:677:3: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:682:34: error: 'TIM_CLOCKDIVISION_DIV1' undeclared (first use in this function); did you mean 'ADC_CLOCK_ASYNC_DIV1'?
+   htim3.Init.ClockDivision     = TIM_CLOCKDIVISION_DIV1;
+                                  ^~~~~~~~~~~~~~~~~~~~~~
+                                  ADC_CLOCK_ASYNC_DIV1
+../Src/main.c:683:34: error: 'TIM_COUNTERMODE_UP' undeclared (first use in this function); did you mean '__COUNTER__'?
+   htim3.Init.CounterMode       = TIM_COUNTERMODE_UP;
+                                  ^~~~~~~~~~~~~~~~~~
+                                  __COUNTER__
+../Src/main.c:686:7: warning: implicit declaration of function 'HAL_TIM_Base_Init'; did you mean 'HAL_MspDeInit'? [-Wimplicit-function-declaration]
+   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+       ^~~~~~~~~~~~~~~~~
+       HAL_MspDeInit
+../Src/main.c:693:22: error: request for member 'MasterOutputTrigger' in something not a structure or union
+   master_timer_config.MasterOutputTrigger = TIM_TRGO_UPDATE;
+                      ^
+../Src/main.c:693:45: error: 'TIM_TRGO_UPDATE' undeclared (first use in this function); did you mean 'HRTIM_RSTR_UPDATE'?
+   master_timer_config.MasterOutputTrigger = TIM_TRGO_UPDATE;
+                                             ^~~~~~~~~~~~~~~
+                                             HRTIM_RSTR_UPDATE
+../Src/main.c:694:22: error: request for member 'MasterOutputTrigger2' in something not a structure or union
+   master_timer_config.MasterOutputTrigger2 = TIM_TRGO2_RESET;
+                      ^
+../Src/main.c:694:46: error: 'TIM_TRGO2_RESET' undeclared (first use in this function); did you mean 'TIM_TRGO_UPDATE'?
+   master_timer_config.MasterOutputTrigger2 = TIM_TRGO2_RESET;
+                                              ^~~~~~~~~~~~~~~
+                                              TIM_TRGO_UPDATE
+../Src/main.c:695:22: error: request for member 'MasterSlaveMode' in something not a structure or union
+   master_timer_config.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+                      ^
+../Src/main.c:695:41: error: 'TIM_MASTERSLAVEMODE_DISABLE' undeclared (first use in this function); did you mean 'SAI_MASTERDIVIDER_DISABLED'?
+   master_timer_config.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                         SAI_MASTERDIVIDER_DISABLED
+../Src/main.c:697:7: warning: implicit declaration of function 'HAL_TIMEx_MasterConfigSynchronization'; did you mean 'HAL_TIM_SlaveConfigSynchronization'? [-Wimplicit-function-declaration]
+   if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &master_timer_config) != HAL_OK)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       HAL_TIM_SlaveConfigSynchronization
+../Src/main.c:652:12: warning: unused variable 'timer_prescaler' [-Wunused-variable]
+   uint32_t timer_prescaler = 0;                   /* Time base prescaler to have timebase aligned on minimum frequency possible */
+            ^~~~~~~~~~~~~~~
+../Src/main.c:651:12: warning: variable 'timer_clock_frequency' set but not used [-Wunused-but-set-variable]
+   uint32_t timer_clock_frequency = 0;             /* Timer clock frequency */
+            ^~~~~~~~~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:742:6: warning: conflicting types for 'CPU_CACHE_Enable'
+ void CPU_CACHE_Enable(void)
+      ^~~~~~~~~~~~~~~~
+../Src/main.c:83:3: note: previous implicit declaration of 'CPU_CACHE_Enable' was here
+   CPU_CACHE_Enable();
+   ^~~~~~~~~~~~~~~~
+../Src/main.c:58:17: warning: 'count' defined but not used [-Wunused-variable]
+ static uint32_t count;
+                 ^~~~~
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o"
+make: *** [Src/subdir.mk:30: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+16:32:36 Build Failed. 15 errors, 10 warnings. (took 4s.569ms)
+
