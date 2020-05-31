@@ -30,7 +30,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="HAL_UART_RxCpltCallback"/>
+			<item key="textPattern" value="CLK_600M_CPU_160M_ADC"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.c"/>
@@ -47,7 +47,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="RxCpltCallback"/>
+			<item key="textPattern" value="10000000"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.c"/>
@@ -59,7 +59,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="50000"/>
+			<item key="textPattern" value="HAL_UART_RxCpltCallback"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.c"/>
@@ -71,7 +71,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="calibration"/>
+			<item key="textPattern" value="RxCpltCallback"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.c"/>
@@ -83,10 +83,10 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="CLK_500M_CPU_120M_ADC"/>
+			<item key="textPattern" value="50000"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
-				<item value="*"/>
+				<item value="*.c"/>
 			</list>
 			<list key="workingSets">
 			</list>
@@ -95,10 +95,10 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ALIGN_32BYTES(__IO"/>
+			<item key="textPattern" value="calibration"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
-				<item value="*"/>
+				<item value="*.c"/>
 			</list>
 			<list key="workingSets">
 			</list>
@@ -107,7 +107,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ValidAudioHalf"/>
+			<item key="textPattern" value="CLK_500M_CPU_120M_ADC"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -119,7 +119,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="AudioOut"/>
+			<item key="textPattern" value="ALIGN_32BYTES(__IO"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -131,7 +131,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="validaudioh"/>
+			<item key="textPattern" value="ValidAudioHalf"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -143,7 +143,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="SAMPLIngrate"/>
+			<item key="textPattern" value="AudioOut"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -155,7 +155,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="CurrentMode"/>
+			<item key="textPattern" value="validaudioh"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -167,7 +167,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="900"/>
+			<item key="textPattern" value="SAMPLIngrate"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>

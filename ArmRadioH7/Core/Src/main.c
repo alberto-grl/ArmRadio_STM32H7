@@ -22,22 +22,22 @@
     along with ARM_Radio.  It is contained in the file Copying.txt in the
     same ZIP file where this file was extracted from.
 
-*******************************************************************************
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
-  * All rights reserved.</center></h2>
-  *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
-  *
-  ******************************************************************************
+ *******************************************************************************
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+ * All rights reserved.</center></h2>
+ *
+ * This software component is licensed by ST under BSD 3-Clause license,
+ * the "License"; You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at:
+ *                        opensource.org/licenses/BSD-3-Clause
+ *
+ ******************************************************************************
   FAQ about cache https://community.st.com/s/article/FAQ-DMA-is-not-working-on-STM32H7-devices
   FPU performance https://community.arm.com/developer/ip-products/processors/f/cortex-m-forum/5567/what-is-the-advantage-of-floating-point-of-cm7-versus-cm4
   CIC filter decomposition: https://www.embedded.com/reducing-power-consumption-in-cic-filter-algorithm-designs/
@@ -46,7 +46,7 @@
   FFT Filters https://www.danvillesignal.com/images/pdfs/compdsp_Borgerding_FFT_slides2.pdf http://dsp-book.narod.ru/DSPMW/08.PDF
   Measuring inductance https://daycounter.com/Articles/How-To-Measure-Inductance.phtml
   RF Filters https://rf-tools.com/lc-filter/
-  */
+ */
 
 #define IN_MAIN
 
@@ -81,24 +81,24 @@
 
 
 /**
-  * @brief  Computation of ADC master conversion result
-  *         from ADC dual mode conversion result (ADC master and ADC slave
-  *         results concatenated on data register of ADC master).
-  * @param  DATA: ADC dual mode conversion result
-  * @retval None
-  */
+ * @brief  Computation of ADC master conversion result
+ *         from ADC dual mode conversion result (ADC master and ADC slave
+ *         results concatenated on data register of ADC master).
+ * @param  DATA: ADC dual mode conversion result
+ * @retval None
+ */
 #define COMPUTATION_DUALMODEINTERLEAVED_ADCMASTER_RESULT(DATA)                 \
-  ((DATA) & 0x0000FFFF)
+		((DATA) & 0x0000FFFF)
 
 /**
-  * @brief  Computation of ADC slave conversion result
-  *         from ADC dual mode conversion result (ADC master and ADC slave
-  *         results concatenated on data register of ADC master).
-  * @param  DATA: ADC dual mode conversion result
-  * @retval None
-  */
+ * @brief  Computation of ADC slave conversion result
+ *         from ADC dual mode conversion result (ADC master and ADC slave
+ *         results concatenated on data register of ADC master).
+ * @param  DATA: ADC dual mode conversion result
+ * @retval None
+ */
 #define COMPUTATION_DUALMODEINTERLEAVED_ADCSLAVE_RESULT(DATA)                  \
-  ((DATA) >> 16)
+		((DATA) >> 16)
 
 /* USER CODE END PM */
 
@@ -109,6 +109,8 @@ DMA_HandleTypeDef hdma_adc1;
 
 DAC_HandleTypeDef hdac1;
 DMA_HandleTypeDef hdma_dac1_ch2;
+
+LPTIM_HandleTypeDef hlptim2;
 
 TIM_HandleTypeDef htim6;
 
@@ -125,11 +127,11 @@ ALIGN_32BYTES(__IO short AudioOut[BSIZE*2]);			  // A single array because we ar
 uint8_t         ubADCDualConversionComplete = RESET;                        /* Set into ADC conversion complete callback */
 
 const uint16_t sine_wave_array[32] = {2047, 1648, 1264, 910, 600,  345,
-                   156, 39,  0,  39,  156,  345,
-                   600, 910, 1264, 1648, 2048, 2447,
-                   2831, 3185, 3495, 3750, 3939, 4056,
-                   4095, 4056, 3939, 3750, 3495, 3185,
-                   2831, 2447};
+		156, 39,  0,  39,  156,  345,
+		600, 910, 1264, 1648, 2048, 2447,
+		2831, 3185, 3495, 3750, 3939, 4056,
+		4095, 4056, 3939, 3750, 3495, 3185,
+		2831, 2447};
 
 char UartTXString[256];
 char UartRXString[256];
@@ -146,6 +148,7 @@ static void MX_ADC2_Init(void);
 static void MX_DAC1_Init(void);
 static void MX_TIM6_Init(void);
 static void MX_USART3_UART_Init(void);
+static void MX_LPTIM2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -170,7 +173,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  //We use our clock init function and we prevent the use of the STM32Cube tool generated one. Not possible to overclock with it.
+	//We use our clock init function and we prevent the use of the STM32Cube tool generated one. Not possible to overclock with it.
 #ifdef EXECUTE_CUBE_CLOCK_INIT
   /* USER CODE END Init */
 
@@ -180,16 +183,16 @@ int main(void)
   /* USER CODE BEGIN SysInit */
 #endif
 
-  /* Enable I-Cache---------------------------------------------------------*/
-  SCB_EnableICache();
+	/* Enable I-Cache---------------------------------------------------------*/
+	SCB_EnableICache();
 
-  /* Enable D-Cache---------------------------------------------------------*/
+	/* Enable D-Cache---------------------------------------------------------*/
 #ifdef USE_DCACHE
-  SCB_EnableDCache();
+	SCB_EnableDCache();
 #endif
 
-// Don't forget to set a different SamplingRate in main.c
-  SystemClock_Config_For_OC();
+	// Don't forget to set a different SamplingRate in main.c
+	SystemClock_Config_For_OC();
 
 
   /* USER CODE END SysInit */
@@ -202,45 +205,46 @@ int main(void)
   MX_DAC1_Init();
   MX_TIM6_Init();
   MX_USART3_UART_Init();
+  MX_LPTIM2_Init();
   /* USER CODE BEGIN 2 */
-  // Initialise again so we can change divider with a #define in main.h
-  MX_TIM6_Init_Custom_Rate();
+	// Initialise again so we can change divider with a #define in main.h
+	MX_TIM6_Init_Custom_Rate();
 
-  /* Run the ADC calibration in single-ended mode */
-  if (HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED) != HAL_OK)
-  {
-    /* Calibration Error */
-    Error_Handler();
-  }
+	/* Run the ADC calibration in single-ended mode */
+	if (HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED) != HAL_OK)
+	{
+		/* Calibration Error */
+		Error_Handler();
+	}
 
-  if (HAL_ADCEx_Calibration_Start(&hadc2, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED) != HAL_OK)
-  {
-    /* Calibration Error */
-    Error_Handler();
-  }
+	if (HAL_ADCEx_Calibration_Start(&hadc2, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED) != HAL_OK)
+	{
+		/* Calibration Error */
+		Error_Handler();
+	}
 
-  volume= 0.1;
+	volume= 0.1;
 
 
-  // Set now the default values for some variables
-    SetFstep(2);
-    cwpitch = CWPITCH;
-    os_time = 0;
-    meanavg = 0.f;
-    Qfactor = 0.987f;         // Q factor for the CW peak filter
-    Muted   = false;
-    AMindex  = LSBindex = 1;
-    USBindex = CWindex  = 1;
-    bw[AM]   = bw[LSB]  = Wide;
-    bw[USB]  = bw[CW]   = Wide;
-    agc[AM]  = agc[LSB] = Slow;
-    agc[USB] = Slow;
-    agc[CW]  = Fast;
-    AGC_decay[Fast] = 0.9995f;
-    AGC_decay[Slow] = 0.99995f;
-    Hangcount[Fast] = 2;
-    Hangcount[Slow] = 30;
-    AgcThreshold    = 1.92e-4f;
+	// Set now the default values for some variables
+	SetFstep(2);
+	cwpitch = CWPITCH;
+	os_time = 0;
+	meanavg = 0.f;
+	Qfactor = 0.987f;         // Q factor for the CW peak filter
+	Muted   = false;
+	AMindex  = LSBindex = 1;
+	USBindex = CWindex  = 1;
+	bw[AM]   = bw[LSB]  = Wide;
+	bw[USB]  = bw[CW]   = Wide;
+	agc[AM]  = agc[LSB] = Slow;
+	agc[USB] = Slow;
+	agc[CW]  = Fast;
+	AGC_decay[Fast] = 0.9995f;
+	AGC_decay[Slow] = 0.99995f;
+	Hangcount[Fast] = 2;
+	Hangcount[Slow] = 30;
+	AgcThreshold    = 1.92e-4f;
 
 #ifdef CLK_600M_CPU_150M_ADC
 	SamplingRate = ((150000000) / 4) * 2 / 8.f;//ADC Clock /async div * 2 ADC channels /8 cycles for 12 bit ADC
@@ -263,35 +267,35 @@ int main(void)
 
 	SamplingRate = SamplingRate * 4000000.f / 3999300.f; // Correct Xtal error
 
-    AudioRate = SamplingRate / 4 /16.f / 4.f; //First decimation was 16, now is 64
-  SDR_compute_IIR_parms();  // compute the IIR parms for the CW peak filter
+	AudioRate = SamplingRate / 4 /16.f / 4.f; //First decimation was 16, now is 64
+	SDR_compute_IIR_parms();  // compute the IIR parms for the CW peak filter
 
- // init the decimating FIR control blocks
-   arc = arm_fir_decimate_init_f32(&SfirR, NUMFIRCOEFS, 4, FIRcoefs, FIRstate1R, BSIZE*4);
-   while(arc != ARM_MATH_SUCCESS)
-	   {};   // spin loop if error
-   arc = arm_fir_decimate_init_f32(&SfirI, NUMFIRCOEFS, 4, FIRcoefs, FIRstate1I, BSIZE*4);
-   while(arc != ARM_MATH_SUCCESS)
-	   {};   // spin loop if error
+	// init the decimating FIR control blocks
+	arc = arm_fir_decimate_init_f32(&SfirR, NUMFIRCOEFS, 4, FIRcoefs, FIRstate1R, BSIZE*4);
+	while(arc != ARM_MATH_SUCCESS)
+	{};   // spin loop if error
+	arc = arm_fir_decimate_init_f32(&SfirI, NUMFIRCOEFS, 4, FIRcoefs, FIRstate1I, BSIZE*4);
+	while(arc != ARM_MATH_SUCCESS)
+	{};   // spin loop if error
 
-      Load_Presets();
-      Tune_Preset(1);      // Set the initial tuning to Preset 1
+	Load_Presets();
+	Tune_Preset(1);      // Set the initial tuning to Preset 1
 
-      DisplayStatus();    // Display status, it would not be shown until a user input was given
-  if (HAL_ADCEx_MultiModeStart_DMA(&hadc1,
-                                   (uint32_t *)aADCDualConvertedValues,
-                                    BSIZE   //Source code says transfer size is in bytes, but it is in number of transfers
-                                  ) != HAL_OK)
-  {
-    /* Start Error */
-    Error_Handler();
-  }
+	DisplayStatus();    // Display status, it would not be shown until a user input was given
+	if (HAL_ADCEx_MultiModeStart_DMA(&hadc1,
+			(uint32_t *)aADCDualConvertedValues,
+			BSIZE   //Source code says transfer size is in bytes, but it is in number of transfers
+	) != HAL_OK)
+	{
+		/* Start Error */
+		Error_Handler();
+	}
 
-  ///////////////
-  HAL_TIM_Base_Start(&htim6);
-  HAL_DAC_Start(&hdac1, DAC_CHANNEL_2);
-  HAL_DAC_Start_DMA(&hdac1, DAC_CHANNEL_2, (uint32_t*)AudioOut, BSIZE * 2, DAC_ALIGN_12B_R);
-  ///////
+	///////////////
+	HAL_TIM_Base_Start(&htim6);
+	HAL_DAC_Start(&hdac1, DAC_CHANNEL_2);
+	HAL_DAC_Start_DMA(&hdac1, DAC_CHANNEL_2, (uint32_t*)AudioOut, BSIZE * 2, DAC_ALIGN_12B_R);
+	///////
 
 
 
@@ -300,31 +304,31 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+	while (1)
+	{
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	    /* Turn-on/off LED1 in function of ADC conversion result */
-	    /*  - Turn-off if ADC conversions buffer is not complete */
-	    /*  - Turn-on if ADC conversions buffer is complete */
+		/* Turn-on/off LED1 in function of ADC conversion result */
+		/*  - Turn-off if ADC conversions buffer is not complete */
+		/*  - Turn-on if ADC conversions buffer is complete */
 
-	    /* ADC conversion buffer complete variable is updated into ADC conversions*/
-	    /* complete callback.*/
+		/* ADC conversion buffer complete variable is updated into ADC conversions*/
+		/* complete callback.*/
 
-UserInput();
-//	  HAL_Delay(10);
-	  if (ubADCDualConversionComplete == RESET)
-	    {
-//	    	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
-	    }
-	    else
-	    {
-//	    	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
-	    }
+		UserInput();
+		//	  HAL_Delay(10);
+		if (ubADCDualConversionComplete == RESET)
+		{
+			//	    	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
+		}
+		else
+		{
+			//	    	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
+		}
 
 
-  }
+	}
   /* USER CODE END 3 */
 }
 
@@ -384,21 +388,32 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USART3|RCC_PERIPHCLK_ADC;
+  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USART3|RCC_PERIPHCLK_LPTIM2
+                              |RCC_PERIPHCLK_ADC;
   PeriphClkInitStruct.PLL2.PLL2M = 4;
   PeriphClkInitStruct.PLL2.PLL2N = 240;
-  PeriphClkInitStruct.PLL2.PLL2P = 4;
+  PeriphClkInitStruct.PLL2.PLL2P = 16;
   PeriphClkInitStruct.PLL2.PLL2Q = 2;
   PeriphClkInitStruct.PLL2.PLL2R = 2;
   PeriphClkInitStruct.PLL2.PLL2RGE = RCC_PLL2VCIRANGE_1;
   PeriphClkInitStruct.PLL2.PLL2VCOSEL = RCC_PLL2VCOWIDE;
-  PeriphClkInitStruct.PLL2.PLL2FRACN = 0;
+  PeriphClkInitStruct.PLL2.PLL2FRACN = 2000;
+  PeriphClkInitStruct.PLL3.PLL3M = 4;
+  PeriphClkInitStruct.PLL3.PLL3N = 240;
+  PeriphClkInitStruct.PLL3.PLL3P = 2;
+  PeriphClkInitStruct.PLL3.PLL3Q = 2;
+  PeriphClkInitStruct.PLL3.PLL3R = 2;
+  PeriphClkInitStruct.PLL3.PLL3RGE = RCC_PLL3VCIRANGE_1;
+  PeriphClkInitStruct.PLL3.PLL3VCOSEL = RCC_PLL3VCOWIDE;
+  PeriphClkInitStruct.PLL3.PLL3FRACN = 0;
   PeriphClkInitStruct.Usart234578ClockSelection = RCC_USART234578CLKSOURCE_D2PCLK1;
-  PeriphClkInitStruct.AdcClockSelection = RCC_ADCCLKSOURCE_PLL2;
+  PeriphClkInitStruct.Lptim2ClockSelection = RCC_LPTIM2CLKSOURCE_PLL2;
+  PeriphClkInitStruct.AdcClockSelection = RCC_ADCCLKSOURCE_PLL3;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
   {
     Error_Handler();
   }
+  HAL_RCC_MCOConfig(RCC_MCO2, RCC_MCO2SOURCE_PLL2PCLK, RCC_MCODIV_10);
 }
 
 /**
@@ -559,6 +574,42 @@ static void MX_DAC1_Init(void)
   /* USER CODE BEGIN DAC1_Init 2 */
 
   /* USER CODE END DAC1_Init 2 */
+
+}
+
+/**
+  * @brief LPTIM2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_LPTIM2_Init(void)
+{
+
+  /* USER CODE BEGIN LPTIM2_Init 0 */
+
+  /* USER CODE END LPTIM2_Init 0 */
+
+  /* USER CODE BEGIN LPTIM2_Init 1 */
+
+  /* USER CODE END LPTIM2_Init 1 */
+  hlptim2.Instance = LPTIM2;
+  hlptim2.Init.Clock.Source = LPTIM_CLOCKSOURCE_APBCLOCK_LPOSC;
+  hlptim2.Init.Clock.Prescaler = LPTIM_PRESCALER_DIV1;
+  hlptim2.Init.UltraLowPowerClock.Polarity = LPTIM_CLOCKPOLARITY_RISING;
+  hlptim2.Init.UltraLowPowerClock.SampleTime = LPTIM_CLOCKSAMPLETIME_DIRECTTRANSITION;
+  hlptim2.Init.Trigger.Source = LPTIM_TRIGSOURCE_SOFTWARE;
+  hlptim2.Init.OutputPolarity = LPTIM_OUTPUTPOLARITY_HIGH;
+  hlptim2.Init.UpdateMode = LPTIM_UPDATE_IMMEDIATE;
+  hlptim2.Init.CounterSource = LPTIM_COUNTERSOURCE_EXTERNAL;
+  hlptim2.Init.Input1Source = LPTIM_INPUT1SOURCE_GPIO;
+  hlptim2.Init.Input2Source = LPTIM_INPUT2SOURCE_GPIO;
+  if (HAL_LPTIM_Init(&hlptim2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN LPTIM2_Init 2 */
+
+  /* USER CODE END LPTIM2_Init 2 */
 
 }
 
@@ -762,6 +813,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(USB_OverCurrent_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : PC9 */
+  GPIO_InitStruct.Pin = GPIO_PIN_9;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  GPIO_InitStruct.Alternate = GPIO_AF0_MCO;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
   /*Configure GPIO pins : USB_SOF_Pin USB_ID_Pin USB_DM_Pin USB_DP_Pin */
   GPIO_InitStruct.Pin = USB_SOF_Pin|USB_ID_Pin|USB_DM_Pin|USB_DP_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
@@ -795,41 +854,41 @@ static void MX_GPIO_Init(void)
 
 
 /**
-  * @brief  Conversion complete callback in non blocking mode
-  * @param  AdcHandle : ADC handle
+ * @brief  Conversion complete callback in non blocking mode
+ * @param  AdcHandle : ADC handle
 
-  */
+ */
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle)
 {
-  /* Invalidate Data Cache to get the updated content of the SRAM on the second half of the ADC converted data buffer: 32 bytes */
+	/* Invalidate Data Cache to get the updated content of the SRAM on the second half of the ADC converted data buffer: 32 bytes */
 #ifdef USE_DCACHE
-	 SCB_InvalidateDCache_by_Addr((uint32_t *) &aADCDualConvertedValues[BSIZE/2], 4*BSIZE/2);
+	SCB_InvalidateDCache_by_Addr((uint32_t *) &aADCDualConvertedValues[BSIZE/2], 4*BSIZE/2);
 #endif
-	 ADC_Stream0_Handler(1);
-  /* Set variable to report DMA transfer status to main program */
-  ubADCDualConversionComplete = SET;
+	ADC_Stream0_Handler(1);
+	/* Set variable to report DMA transfer status to main program */
+	ubADCDualConversionComplete = SET;
 }
 
 /**
-  * @brief  Conversion DMA half-transfer callback in non blocking mode
-  * @param  hadc: ADC handle
-  * */
+ * @brief  Conversion DMA half-transfer callback in non blocking mode
+ * @param  hadc: ADC handle
+ * */
 
 void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef* hadc)
 {
-  /* Invalidate Data Cache to get the updated content of the SRAM on the first half of the ADC converted data buffer: 32 bytes */
+	/* Invalidate Data Cache to get the updated content of the SRAM on the first half of the ADC converted data buffer: 32 bytes */
 #ifdef USE_DCACHE
 	SCB_InvalidateDCache_by_Addr((uint32_t *) &aADCDualConvertedValues[0], 4*BSIZE/2);
 #endif
 	ADC_Stream0_Handler(0);
-  /* Reset variable to report DMA transfer status to main program */
-  ubADCDualConversionComplete = RESET;
+	/* Reset variable to report DMA transfer status to main program */
+	ubADCDualConversionComplete = RESET;
 }
 
 void HAL_DACEx_ConvCpltCallbackCh2(DAC_HandleTypeDef *hdac)
 {
 	ValidAudioHalf = &AudioOut[BSIZE];
-	 LED_RED_ON;
+	LED_RED_ON;
 }
 
 void HAL_DACEx_ConvHalfCpltCallbackCh2(DAC_HandleTypeDef *hdac)
@@ -841,124 +900,145 @@ void HAL_DACEx_ConvHalfCpltCallbackCh2(DAC_HandleTypeDef *hdac)
 void SystemClock_Config_For_OC(void)
 
 {
-  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
-
-  /** Supply configuration update enable
-  */
-  HAL_PWREx_ConfigSupply(PWR_LDO_SUPPLY);
-  /** Configure the main internal regulator output voltage
-  */
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE0);
-
-  while(!__HAL_PWR_GET_FLAG(PWR_FLAG_VOSRDY)) {}
-  /** Macro to configure the PLL clock source
-  */
-  __HAL_RCC_PLL_PLLSOURCE_CONFIG(RCC_PLLSOURCE_HSE);
-  /** Initializes the CPU, AHB and APB busses clocks
-  */
+	/* MCO2 is not correctly initialized by CubeMX if LPTIM or another periferal is not enabled with the
+	* clock from the same PLL as MCO2.
+	*/
 
 
+	RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+	RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+	RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
 
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 4;
-  RCC_OscInitStruct.PLL.PLLN = 480;
-  RCC_OscInitStruct.PLL.PLLP = 2;
-  RCC_OscInitStruct.PLL.PLLQ = 4;
-  RCC_OscInitStruct.PLL.PLLR = 2;
-  RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_1;
-  RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
-  RCC_OscInitStruct.PLL.PLLFRACN = 0;
+	/** Supply configuration update enable
+	 */
+	HAL_PWREx_ConfigSupply(PWR_LDO_SUPPLY);
+	/** Configure the main internal regulator output voltage
+	 */
+	__HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE0);
+
+	while(!__HAL_PWR_GET_FLAG(PWR_FLAG_VOSRDY)) {}
+	/** Macro to configure the PLL clock source
+	 */
+	__HAL_RCC_PLL_PLLSOURCE_CONFIG(RCC_PLLSOURCE_HSE);
+	/** Initializes the CPU, AHB and APB busses clocks
+	 */
 
 
 
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  //RCC_OscInitStruct.HSEState = RCC_HSE_BYPASS; // External clock on pin 29 CN 11 (PF0/PH0)
-  RCC_OscInitStruct.HSEState = RCC_HSE_ON; //Xtal oscillator
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 2;
+	RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+	RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+	RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+	RCC_OscInitStruct.PLL.PLLM = 4;
+	RCC_OscInitStruct.PLL.PLLN = 480;
+	RCC_OscInitStruct.PLL.PLLP = 2;
+	RCC_OscInitStruct.PLL.PLLQ = 4;
+	RCC_OscInitStruct.PLL.PLLR = 2;
+	RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_1;
+	RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
+	RCC_OscInitStruct.PLL.PLLFRACN = 0;
+
+
+
+	RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+	//RCC_OscInitStruct.HSEState = RCC_HSE_BYPASS; // External clock on pin 29 CN 11 (PF0/PH0)
+	RCC_OscInitStruct.HSEState = RCC_HSE_ON; //Xtal oscillator
+	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+	RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+	RCC_OscInitStruct.PLL.PLLM = 2;
 #ifdef CLK_600M_CPU_150M_ADC
-  RCC_OscInitStruct.PLL.PLLN = 300;
+	RCC_OscInitStruct.PLL.PLLN = 300;
 #endif
 #ifdef CLK_500M_CPU_120M_ADC
-  RCC_OscInitStruct.PLL.PLLN = 250;
+	RCC_OscInitStruct.PLL.PLLN = 250;
 #endif
 #ifdef CLK_500M_CPU_128M_ADC
-  RCC_OscInitStruct.PLL.PLLN = 250;
+	RCC_OscInitStruct.PLL.PLLN = 250;
 #endif
 #ifdef CLK_480M_CPU_120M_ADC
-  RCC_OscInitStruct.PLL.PLLN = 240;
+	RCC_OscInitStruct.PLL.PLLN = 240;
 #endif
 #ifdef CLK_600M_CPU_60M_ADC
-  RCC_OscInitStruct.PLL.PLLN = 300;
+	RCC_OscInitStruct.PLL.PLLN = 300;
 #endif
 #ifdef CLK_600M_CPU_160M_ADC
-  RCC_OscInitStruct.PLL.PLLN = 300;
+	RCC_OscInitStruct.PLL.PLLN = 300;
 #endif
-  RCC_OscInitStruct.PLL.PLLP = 2;
-  RCC_OscInitStruct.PLL.PLLQ = 4;
-  RCC_OscInitStruct.PLL.PLLR = 2;
-  RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_1;
-  RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
-  RCC_OscInitStruct.PLL.PLLFRACN = 0;
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Initializes the CPU, AHB and APB busses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2
-                              |RCC_CLOCKTYPE_D3PCLK1|RCC_CLOCKTYPE_D1PCLK1;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB3CLKDivider = RCC_APB3_DIV2;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_APB2_DIV2;
-  RCC_ClkInitStruct.APB4CLKDivider = RCC_APB4_DIV2;
+	RCC_OscInitStruct.PLL.PLLP = 2;
+	RCC_OscInitStruct.PLL.PLLQ = 4;
+	RCC_OscInitStruct.PLL.PLLR = 2;
+	RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_1;
+	RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
+	RCC_OscInitStruct.PLL.PLLFRACN = 0;
+	if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	/** Initializes the CPU, AHB and APB busses clocks
+	 */
+	RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+			|RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2
+			|RCC_CLOCKTYPE_D3PCLK1|RCC_CLOCKTYPE_D1PCLK1;
+	RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+	RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV1;
+	RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV2;
+	RCC_ClkInitStruct.APB3CLKDivider = RCC_APB3_DIV2;
+	RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV2;
+	RCC_ClkInitStruct.APB2CLKDivider = RCC_APB2_DIV2;
+	RCC_ClkInitStruct.APB4CLKDivider = RCC_APB4_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USART3|RCC_PERIPHCLK_ADC;
-  PeriphClkInitStruct.PLL2.PLL2M = 4;
+	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USART3|RCC_PERIPHCLK_LPTIM2
+	                              |RCC_PERIPHCLK_ADC;
+	PeriphClkInitStruct.PLL3.PLL3M = 4;
 #ifdef CLK_600M_CPU_150M_ADC
-  PeriphClkInitStruct.PLL2.PLL2N = 300;
+	PeriphClkInitStruct.PLL3.PLL3N = 300;
 #endif
 #ifdef CLK_500M_CPU_120M_ADC
-  PeriphClkInitStruct.PLL2.PLL2N = 240;
+	PeriphClkInitStruct.PLL3.PLL3N = 240;
 #endif
 #ifdef CLK_500M_CPU_128M_ADC
-  PeriphClkInitStruct.PLL2.PLL2N = 256;
+	PeriphClkInitStruct.PLL3.PLL3N = 256;
 #endif
 #ifdef CLK_480M_CPU_120M_ADC
-  PeriphClkInitStruct.PLL2.PLL2N = 240;
+	PeriphClkInitStruct.PLL3.PLL3N = 120;
 #endif
 #ifdef CLK_600M_CPU_60M_ADC
-  PeriphClkInitStruct.PLL2.PLL2N = 120;
+	PeriphClkInitStruct.PLL3.PLL3N = 120;
 #endif
 #ifdef CLK_600M_CPU_160M_ADC
-  PeriphClkInitStruct.PLL2.PLL2N = 320;
+	PeriphClkInitStruct.PLL3.PLL3N = 320;
 #endif
-  PeriphClkInitStruct.PLL2.PLL2P = 4;
-  PeriphClkInitStruct.PLL2.PLL2Q = 2;
-  PeriphClkInitStruct.PLL2.PLL2R = 2;
-  PeriphClkInitStruct.PLL2.PLL2RGE = RCC_PLL2VCIRANGE_1;
-  PeriphClkInitStruct.PLL2.PLL2VCOSEL = RCC_PLL2VCOWIDE;
-  PeriphClkInitStruct.PLL2.PLL2FRACN = 0;
-  PeriphClkInitStruct.Usart234578ClockSelection = RCC_USART234578CLKSOURCE_D2PCLK1;
-  PeriphClkInitStruct.AdcClockSelection = RCC_ADCCLKSOURCE_PLL2;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
+	PeriphClkInitStruct.PLL2.PLL2M = 4;
+	PeriphClkInitStruct.PLL2.PLL2N = 240;
+	PeriphClkInitStruct.PLL2.PLL2P = 16;
+	PeriphClkInitStruct.PLL2.PLL2Q = 2;
+	PeriphClkInitStruct.PLL2.PLL2R = 2;
+	PeriphClkInitStruct.PLL2.PLL2RGE = RCC_PLL2VCIRANGE_1;
+	PeriphClkInitStruct.PLL2.PLL2VCOSEL = RCC_PLL2VCOWIDE;
+	PeriphClkInitStruct.PLL2.PLL2FRACN = 6000;
+	PeriphClkInitStruct.PLL3.PLL3M = 4;
+//	PeriphClkInitStruct.PLL3.PLL3N = 240;
+	PeriphClkInitStruct.PLL3.PLL3P = 2;
+	PeriphClkInitStruct.PLL3.PLL3Q = 2;
+	PeriphClkInitStruct.PLL3.PLL3R = 4;
+	PeriphClkInitStruct.PLL3.PLL3RGE = RCC_PLL3VCIRANGE_1;
+	PeriphClkInitStruct.PLL3.PLL3VCOSEL = RCC_PLL3VCOWIDE;
+	PeriphClkInitStruct.PLL3.PLL3FRACN = 0;
+	PeriphClkInitStruct.Usart234578ClockSelection = RCC_USART234578CLKSOURCE_D2PCLK1;
+
+	 PeriphClkInitStruct.Lptim2ClockSelection = RCC_LPTIM2CLKSOURCE_PLL2;
+	 PeriphClkInitStruct.AdcClockSelection = RCC_ADCCLKSOURCE_PLL3;
+
+	if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	HAL_RCC_MCOConfig(RCC_MCO2, RCC_MCO2SOURCE_PLL2PCLK, RCC_MCODIV_10);
 }
 
 void UserInput(void)
@@ -968,7 +1048,7 @@ void UserInput(void)
 
 	__HAL_UART_SEND_REQ (&huart3, UART_RXDATA_FLUSH_REQUEST);
 	__HAL_UART_CLEAR_OREFLAG (&huart3);
-//result = (HAL_UART_Receive(&huart3, (uint8_t *) UartRXString, 1, 1 )) ;
+	//result = (HAL_UART_Receive(&huart3, (uint8_t *) UartRXString, 1, 1 )) ;
 	result = (HAL_UART_Receive_IT(&huart3, (uint8_t *) UartRXString, 1 )) ;
 
 	if (result == HAL_OK)
@@ -1010,22 +1090,22 @@ void UserInput(void)
 			SetBW((Bwidth)Wide);  break;
 		case 45: //-
 			volume -= 0.1;
-				if (volume < 0)
-					volume = 0;
-				break;
+			if (volume < 0)
+				volume = 0;
+			break;
 		case 43: //+
-					volume += 0.1;
-						if (volume > 1.0)
-							volume = 1.0;
-						break;
+			volume += 0.1;
+			if (volume > 1.0)
+				volume = 1.0;
+			break;
 		}
 
-	DisplayStatus();
+		DisplayStatus();
 	}
 
-	  SValue = 10 / 3.01 * log10(PeakAudioValue * 2000.0);
-	  sprintf((char*)UartTXString, "S %-4.1f\r", SValue);
-	  HAL_UART_Transmit(&huart3, (uint8_t *) UartTXString, strlen(UartTXString), 100);
+	SValue = 10 / 3.01 * log10(PeakAudioValue * 2000.0);
+	sprintf((char*)UartTXString, "S %-4.1f\r", SValue);
+	HAL_UART_Transmit(&huart3, (uint8_t *) UartTXString, strlen(UartTXString), 100);
 }
 
 void DisplayStatus(void)
@@ -1064,15 +1144,15 @@ void DisplayStatus(void)
 	case Wide: strcpy(StringWidth,"Wide"); break;
 	}
 	sprintf(UartTXString, "          Freq %.0f Step %s Mode %s BW %s AGG %s Volume %1.1f   \r", LOfreq, StringStep, StringMode, StringWidth, StringAGC, volume);
-			HAL_UART_Transmit(&huart3, (uint8_t *) UartTXString, strlen(UartTXString), 100);
+	HAL_UART_Transmit(&huart3, (uint8_t *) UartTXString, strlen(UartTXString), 100);
 }
 
 
 /**
-  * @brief TIM6 Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief TIM6 Initialization Function
+ * @param None
+ * @retval None
+ */
 void MX_TIM6_Init_Custom_Rate(void)
 {
 
@@ -1128,17 +1208,17 @@ void MX_TIM6_Init_Custom_Rate(void)
 
 
 /**
-  * @brief  Rx Transfer completed callback
-  * @param  UartHandle: UART handle
-  * @note   This example shows a simple way to report end of DMA Rx transfer, and
-  *         you can add your own implementation.
-  * @retval None
-  */
+ * @brief  Rx Transfer completed callback
+ * @param  UartHandle: UART handle
+ * @note   This example shows a simple way to report end of DMA Rx transfer, and
+ *         you can add your own implementation.
+ * @retval None
+ */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *UartHandle)
 {
 
-  /* Turn LED2 on: Transfer in reception process is correct */
-LED_RED_OFF;
+	/* Turn LED2 on: Transfer in reception process is correct */
+	LED_RED_OFF;
 }
 
 
@@ -1153,13 +1233,13 @@ LED_RED_OFF;
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
+	/* User can add his own implementation to report the HAL error return state */
 
-	 while(1)
-	  {
-		  if((os_time % 50) == 0)  // blink fast the two leds in case of errors
-	      LED_switch();
-	  }
+	while(1)
+	{
+		if((os_time % 50) == 0)  // blink fast the two leds in case of errors
+			LED_switch();
+	}
   /* USER CODE END Error_Handler_Debug */
 }
 
@@ -1174,7 +1254,7 @@ void Error_Handler(void)
 void assert_failed(uint8_t *file, uint32_t line)
 { 
   /* USER CODE BEGIN 6 */
-  /* User can add his own implementation to report the file name and line number,
+	/* User can add his own implementation to report the file name and line number,
      tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */
 }

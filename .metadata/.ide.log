@@ -24322,3 +24322,913 @@ java.lang.NullPointerException
 2020-05-31 08:15:59,584 [INFO] IPUIPlugin:65 - create IPUIPlugin
 2020-05-31 08:15:59,681 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
 2020-05-31 08:15:59,850 [INFO] OpenFileManager:294 - Restore cursor
+2020-05-31 10:34:41,681 [INFO] DbMcusDocs:142 - JSON generation date=Wed May 20 17:34:35 CEST 2020 (1589988875)
+2020-05-31 10:34:42,065 [INFO] DbMcusDocs:77 - Found 580 MCUs documents
+2020-05-31 10:34:59,406 [INFO] Gpio:248 - dependency for GPIO [ADC1, ADC2, DAC1, RCC, USART3]
+2020-05-31 11:18:34,315 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 583921440 Bytes (751828992)
+2020-05-31 11:18:34,683 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 640024864 Bytes (751828992)
+2020-05-31 11:18:35,695 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DAC
+2020-05-31 11:18:35,695 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM6_7H7
+2020-05-31 11:18:35,695 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: ADC
+2020-05-31 11:18:35,695 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-05-31 11:18:35,695 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: ADC
+2020-05-31 11:18:35,696 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: RCC
+2020-05-31 11:18:35,696 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-05-31 11:18:35,696 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: USART
+2020-05-31 11:18:35,696 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: CORTEX_M7
+2020-05-31 11:18:35,696 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DMA
+2020-05-31 11:18:35,697 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-05-31 11:18:35,702 [INFO] CodeGenerator:603 - code generatio: config db path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\
+2020-05-31 11:18:36,774 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\license.tmp_save
+2020-05-31 11:18:37,353 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\license.tmp
+2020-05-31 11:18:37,647 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\gpio.tmp_save
+2020-05-31 11:18:38,017 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\gpio.tmp
+2020-05-31 11:18:39,770 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:18:39,772 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for ADC
+2020-05-31 11:18:39,773 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:18:39,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:18:39,777 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for CORTEX_M7
+2020-05-31 11:18:39,778 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:18:39,797 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\cortex.tmp_save
+2020-05-31 11:18:40,105 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\cortex.tmp
+2020-05-31 11:18:40,115 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:18:40,118 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DAC
+2020-05-31 11:18:40,120 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:18:40,123 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:18:40,125 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2020-05-31 11:18:40,127 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:18:40,291 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma.tmp_save
+2020-05-31 11:18:40,433 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma.tmp
+2020-05-31 11:18:40,439 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma_GV.tmp_save
+2020-05-31 11:18:40,696 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma_GV.tmp
+2020-05-31 11:18:40,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:18:40,701 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-05-31 11:18:40,702 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:18:40,705 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:18:40,707 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2020-05-31 11:18:40,737 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:18:40,741 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-05-31 11:18:40,742 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:18:40,764 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_it.c_save
+2020-05-31 11:18:41,301 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_it.c
+2020-05-31 11:18:41,310 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_it.h_save
+2020-05-31 11:18:41,523 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_it.h
+2020-05-31 11:18:41,821 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_hal_msp.c_save
+2020-05-31 11:18:42,116 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_hal_msp.c
+2020-05-31 11:18:42,137 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\system.tmp_save
+2020-05-31 11:18:42,257 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\system.tmp
+2020-05-31 11:18:42,278 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_hal_conf.h_save
+2020-05-31 11:18:42,430 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_hal_conf.h
+2020-05-31 11:18:42,502 [WARN] IPConfigManager:2701 - IP not found : TIM
+2020-05-31 11:18:42,503 [WARN] IPConfigManager:2701 - IP not found : gpio
+2020-05-31 11:18:42,504 [WARN] CodeGenerator:2649 - IP not found : TIM
+2020-05-31 11:18:42,505 [WARN] CodeGenerator:2649 - IP not found : gpio
+2020-05-31 11:18:42,518 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\main.h_save
+2020-05-31 11:18:42,814 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\main.h
+2020-05-31 11:18:42,831 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\main.c_save
+2020-05-31 11:18:43,251 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\main.c
+2020-05-31 11:18:44,574 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 501mS.
+2020-05-31 11:18:44,583 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-05-31 11:18:45,097 [INFO] ConfigFileManager:1066 - The Die is : DIE450
+2020-05-31 11:18:49,244 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 4661mS.
+2020-05-31 11:18:49,245 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-05-31 11:18:49,249 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-05-31 11:20:04,020 [INFO] Gpio:248 - dependency for GPIO [ADC1, ADC2, DAC1, RCC, USART3]
+2020-05-31 11:54:47,240 [INFO] Gpio:248 - dependency for GPIO [ADC1, ADC2, DAC1, RCC, USART3]
+2020-05-31 11:55:15,767 [INFO] Gpio:248 - dependency for GPIO [ADC1, ADC2, DAC1, RCC, USART3]
+2020-05-31 11:57:24,012 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 752555760 Bytes (1029701632)
+2020-05-31 11:57:25,748 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 773526512 Bytes (1029701632)
+2020-05-31 11:57:26,101 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 792401688 Bytes (1029701632)
+2020-05-31 11:57:26,580 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DAC
+2020-05-31 11:57:26,580 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM6_7H7
+2020-05-31 11:57:26,580 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: ADC
+2020-05-31 11:57:26,580 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-05-31 11:57:26,580 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: ADC
+2020-05-31 11:57:26,580 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: RCC
+2020-05-31 11:57:26,580 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-05-31 11:57:26,580 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: USART
+2020-05-31 11:57:26,580 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: CORTEX_M7
+2020-05-31 11:57:26,580 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DMA
+2020-05-31 11:57:26,581 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-05-31 11:57:26,585 [INFO] CodeGenerator:603 - code generatio: config db path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\
+2020-05-31 11:57:26,596 [INFO] Argument:278 - Argument : hdmavalue: null
+2020-05-31 11:57:26,596 [INFO] Argument:280 - 	 sub Args: 
+2020-05-31 11:57:26,596 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream0
+2020-05-31 11:57:26,596 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream0
+2020-05-31 11:57:26,596 [INFO] Argument:278 - Argument : Initvalue: null
+2020-05-31 11:57:26,596 [INFO] Argument:280 - 	 sub Args: 
+2020-05-31 11:57:26,596 [INFO] Argument:278 - Argument : Requestvalue: DMA_REQUEST_ADC1
+2020-05-31 11:57:26,597 [INFO] Argument:288 - Argument : Requestvalue: DMA_REQUEST_ADC1
+2020-05-31 11:57:26,597 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-05-31 11:57:26,597 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-05-31 11:57:26,597 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-05-31 11:57:26,597 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-05-31 11:57:26,597 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-05-31 11:57:26,597 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-05-31 11:57:26,597 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2020-05-31 11:57:26,597 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2020-05-31 11:57:26,597 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2020-05-31 11:57:26,597 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2020-05-31 11:57:26,597 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2020-05-31 11:57:26,597 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2020-05-31 11:57:26,598 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2020-05-31 11:57:26,598 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2020-05-31 11:57:26,598 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2020-05-31 11:57:26,598 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2020-05-31 11:57:26,598 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2020-05-31 11:57:26,599 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2020-05-31 11:57:26,599 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2020-05-31 11:57:26,599 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2020-05-31 11:57:26,599 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2020-05-31 11:57:26,599 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2020-05-31 11:57:26,599 [INFO] Argument:278 - Argument : Lockvalue: null
+2020-05-31 11:57:26,599 [INFO] Argument:288 - Argument : Lockvalue: null
+2020-05-31 11:57:26,600 [INFO] Argument:278 - Argument : Statevalue: null
+2020-05-31 11:57:26,600 [INFO] Argument:288 - Argument : Statevalue: null
+2020-05-31 11:57:26,600 [INFO] Argument:278 - Argument : Parentvalue: null
+2020-05-31 11:57:26,600 [INFO] Argument:288 - Argument : Parentvalue: null
+2020-05-31 11:57:26,600 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2020-05-31 11:57:26,600 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2020-05-31 11:57:26,600 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2020-05-31 11:57:26,600 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2020-05-31 11:57:26,600 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:278 - Argument : XferM1HalfCpltCallbackvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:288 - Argument : XferM1HalfCpltCallbackvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:278 - Argument : XferAbortCallbackvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:288 - Argument : XferAbortCallbackvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:278 - Argument : StreamBaseAddressvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:288 - Argument : StreamBaseAddressvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:278 - Argument : StreamIndexvalue: null
+2020-05-31 11:57:26,601 [INFO] Argument:288 - Argument : StreamIndexvalue: null
+2020-05-31 11:57:26,611 [INFO] Argument:278 - Argument : hdmavalue: null
+2020-05-31 11:57:26,611 [INFO] Argument:280 - 	 sub Args: 
+2020-05-31 11:57:26,611 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream1
+2020-05-31 11:57:26,611 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream1
+2020-05-31 11:57:26,611 [INFO] Argument:278 - Argument : Initvalue: null
+2020-05-31 11:57:26,611 [INFO] Argument:280 - 	 sub Args: 
+2020-05-31 11:57:26,611 [INFO] Argument:278 - Argument : Requestvalue: DMA_REQUEST_DAC2
+2020-05-31 11:57:26,611 [INFO] Argument:288 - Argument : Requestvalue: DMA_REQUEST_DAC2
+2020-05-31 11:57:26,612 [INFO] Argument:278 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2020-05-31 11:57:26,612 [INFO] Argument:288 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2020-05-31 11:57:26,612 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-05-31 11:57:26,612 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-05-31 11:57:26,612 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-05-31 11:57:26,612 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-05-31 11:57:26,612 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2020-05-31 11:57:26,612 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2020-05-31 11:57:26,612 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2020-05-31 11:57:26,612 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2020-05-31 11:57:26,612 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2020-05-31 11:57:26,612 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2020-05-31 11:57:26,613 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2020-05-31 11:57:26,613 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2020-05-31 11:57:26,613 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2020-05-31 11:57:26,613 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2020-05-31 11:57:26,613 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2020-05-31 11:57:26,613 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2020-05-31 11:57:26,613 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2020-05-31 11:57:26,613 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2020-05-31 11:57:26,613 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2020-05-31 11:57:26,613 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2020-05-31 11:57:26,613 [INFO] Argument:278 - Argument : Lockvalue: null
+2020-05-31 11:57:26,613 [INFO] Argument:288 - Argument : Lockvalue: null
+2020-05-31 11:57:26,613 [INFO] Argument:278 - Argument : Statevalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:288 - Argument : Statevalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:278 - Argument : Parentvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:288 - Argument : Parentvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:278 - Argument : XferM1HalfCpltCallbackvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:288 - Argument : XferM1HalfCpltCallbackvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2020-05-31 11:57:26,614 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2020-05-31 11:57:26,615 [INFO] Argument:278 - Argument : XferAbortCallbackvalue: null
+2020-05-31 11:57:26,615 [INFO] Argument:288 - Argument : XferAbortCallbackvalue: null
+2020-05-31 11:57:26,615 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2020-05-31 11:57:26,615 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2020-05-31 11:57:26,615 [INFO] Argument:278 - Argument : StreamBaseAddressvalue: null
+2020-05-31 11:57:26,615 [INFO] Argument:288 - Argument : StreamBaseAddressvalue: null
+2020-05-31 11:57:26,615 [INFO] Argument:278 - Argument : StreamIndexvalue: null
+2020-05-31 11:57:26,615 [INFO] Argument:288 - Argument : StreamIndexvalue: null
+2020-05-31 11:57:27,056 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\license.tmp_save
+2020-05-31 11:57:27,180 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\license.tmp
+2020-05-31 11:57:27,338 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\gpio.tmp_save
+2020-05-31 11:57:27,473 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\gpio.tmp
+2020-05-31 11:57:28,948 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:57:28,950 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for ADC
+2020-05-31 11:57:28,951 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:57:28,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:57:28,954 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for CORTEX_M7
+2020-05-31 11:57:28,955 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:57:28,966 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\cortex.tmp_save
+2020-05-31 11:57:29,074 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\cortex.tmp
+2020-05-31 11:57:29,077 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:57:29,079 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DAC
+2020-05-31 11:57:29,081 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:57:29,083 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:57:29,085 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2020-05-31 11:57:29,087 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:57:29,191 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma.tmp_save
+2020-05-31 11:57:29,327 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma.tmp
+2020-05-31 11:57:29,348 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma_GV.tmp_save
+2020-05-31 11:57:29,458 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma_GV.tmp
+2020-05-31 11:57:29,464 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:57:29,467 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-05-31 11:57:29,469 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:57:29,471 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 11:57:29,474 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2020-05-31 11:57:29,475 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:57:29,478 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-05-31 11:57:29,479 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 11:57:29,507 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_it.c_save
+2020-05-31 11:57:29,687 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_it.c
+2020-05-31 11:57:29,701 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_it.h_save
+2020-05-31 11:57:29,842 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_it.h
+2020-05-31 11:57:30,185 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_hal_msp.c_save
+2020-05-31 11:57:30,582 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_hal_msp.c
+2020-05-31 11:57:30,684 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\system.tmp_save
+2020-05-31 11:57:30,834 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\system.tmp
+2020-05-31 11:57:30,846 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_hal_conf.h_save
+2020-05-31 11:57:31,047 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_hal_conf.h
+2020-05-31 11:57:31,093 [WARN] IPConfigManager:2701 - IP not found : TIM
+2020-05-31 11:57:31,093 [WARN] IPConfigManager:2701 - IP not found : gpio
+2020-05-31 11:57:31,095 [WARN] CodeGenerator:2649 - IP not found : TIM
+2020-05-31 11:57:31,095 [WARN] CodeGenerator:2649 - IP not found : gpio
+2020-05-31 11:57:31,103 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\main.h_save
+2020-05-31 11:57:31,233 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\main.h
+2020-05-31 11:57:31,259 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\main.c_save
+2020-05-31 11:57:31,530 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\main.c
+2020-05-31 11:57:32,689 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 435mS.
+2020-05-31 11:57:32,693 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-05-31 11:57:33,224 [INFO] ConfigFileManager:1066 - The Die is : DIE450
+2020-05-31 11:57:37,150 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 4457mS.
+2020-05-31 11:57:37,155 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 5mS.
+2020-05-31 11:57:37,159 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-05-31 12:11:55,421 [INFO] NvicIntPanel:88 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,733x442,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2020-05-31 12:46:48,746 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 646479336 Bytes (1073741824)
+2020-05-31 12:46:50,470 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 667970936 Bytes (1073741824)
+2020-05-31 12:46:50,852 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 686330480 Bytes (1073741824)
+2020-05-31 12:46:51,281 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: LPTIM
+2020-05-31 12:46:51,281 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DAC
+2020-05-31 12:46:51,281 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM6_7H7
+2020-05-31 12:46:51,281 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: ADC
+2020-05-31 12:46:51,281 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-05-31 12:46:51,282 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: ADC
+2020-05-31 12:46:51,282 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: RCC
+2020-05-31 12:46:51,282 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-05-31 12:46:51,282 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: USART
+2020-05-31 12:46:51,282 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: CORTEX_M7
+2020-05-31 12:46:51,282 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DMA
+2020-05-31 12:46:51,282 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-05-31 12:46:51,289 [INFO] CodeGenerator:603 - code generatio: config db path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\
+2020-05-31 12:46:51,298 [INFO] Argument:278 - Argument : hdmavalue: null
+2020-05-31 12:46:51,299 [INFO] Argument:280 - 	 sub Args: 
+2020-05-31 12:46:51,299 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream0
+2020-05-31 12:46:51,299 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream0
+2020-05-31 12:46:51,299 [INFO] Argument:278 - Argument : Initvalue: null
+2020-05-31 12:46:51,299 [INFO] Argument:280 - 	 sub Args: 
+2020-05-31 12:46:51,299 [INFO] Argument:278 - Argument : Requestvalue: DMA_REQUEST_ADC1
+2020-05-31 12:46:51,299 [INFO] Argument:288 - Argument : Requestvalue: DMA_REQUEST_ADC1
+2020-05-31 12:46:51,299 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-05-31 12:46:51,299 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-05-31 12:46:51,299 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-05-31 12:46:51,299 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-05-31 12:46:51,299 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-05-31 12:46:51,300 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-05-31 12:46:51,300 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2020-05-31 12:46:51,300 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2020-05-31 12:46:51,300 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2020-05-31 12:46:51,300 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2020-05-31 12:46:51,300 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2020-05-31 12:46:51,300 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2020-05-31 12:46:51,300 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2020-05-31 12:46:51,300 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2020-05-31 12:46:51,300 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2020-05-31 12:46:51,300 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2020-05-31 12:46:51,300 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:278 - Argument : Lockvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:288 - Argument : Lockvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:278 - Argument : Statevalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:288 - Argument : Statevalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:278 - Argument : Parentvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:288 - Argument : Parentvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2020-05-31 12:46:51,301 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:278 - Argument : XferM1HalfCpltCallbackvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:288 - Argument : XferM1HalfCpltCallbackvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:278 - Argument : XferAbortCallbackvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:288 - Argument : XferAbortCallbackvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:278 - Argument : StreamBaseAddressvalue: null
+2020-05-31 12:46:51,302 [INFO] Argument:288 - Argument : StreamBaseAddressvalue: null
+2020-05-31 12:46:51,303 [INFO] Argument:278 - Argument : StreamIndexvalue: null
+2020-05-31 12:46:51,303 [INFO] Argument:288 - Argument : StreamIndexvalue: null
+2020-05-31 12:46:51,314 [INFO] Argument:278 - Argument : hdmavalue: null
+2020-05-31 12:46:51,315 [INFO] Argument:280 - 	 sub Args: 
+2020-05-31 12:46:51,315 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream1
+2020-05-31 12:46:51,315 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream1
+2020-05-31 12:46:51,315 [INFO] Argument:278 - Argument : Initvalue: null
+2020-05-31 12:46:51,315 [INFO] Argument:280 - 	 sub Args: 
+2020-05-31 12:46:51,315 [INFO] Argument:278 - Argument : Requestvalue: DMA_REQUEST_DAC2
+2020-05-31 12:46:51,315 [INFO] Argument:288 - Argument : Requestvalue: DMA_REQUEST_DAC2
+2020-05-31 12:46:51,316 [INFO] Argument:278 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2020-05-31 12:46:51,316 [INFO] Argument:288 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2020-05-31 12:46:51,316 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-05-31 12:46:51,316 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-05-31 12:46:51,316 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-05-31 12:46:51,316 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-05-31 12:46:51,316 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2020-05-31 12:46:51,316 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2020-05-31 12:46:51,317 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2020-05-31 12:46:51,317 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2020-05-31 12:46:51,317 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2020-05-31 12:46:51,317 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2020-05-31 12:46:51,317 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2020-05-31 12:46:51,317 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2020-05-31 12:46:51,317 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2020-05-31 12:46:51,317 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2020-05-31 12:46:51,318 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2020-05-31 12:46:51,318 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2020-05-31 12:46:51,318 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2020-05-31 12:46:51,318 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2020-05-31 12:46:51,318 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2020-05-31 12:46:51,318 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2020-05-31 12:46:51,318 [INFO] Argument:278 - Argument : Lockvalue: null
+2020-05-31 12:46:51,318 [INFO] Argument:288 - Argument : Lockvalue: null
+2020-05-31 12:46:51,319 [INFO] Argument:278 - Argument : Statevalue: null
+2020-05-31 12:46:51,319 [INFO] Argument:288 - Argument : Statevalue: null
+2020-05-31 12:46:51,319 [INFO] Argument:278 - Argument : Parentvalue: null
+2020-05-31 12:46:51,319 [INFO] Argument:288 - Argument : Parentvalue: null
+2020-05-31 12:46:51,319 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2020-05-31 12:46:51,319 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2020-05-31 12:46:51,319 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2020-05-31 12:46:51,319 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2020-05-31 12:46:51,320 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2020-05-31 12:46:51,320 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2020-05-31 12:46:51,320 [INFO] Argument:278 - Argument : XferM1HalfCpltCallbackvalue: null
+2020-05-31 12:46:51,320 [INFO] Argument:288 - Argument : XferM1HalfCpltCallbackvalue: null
+2020-05-31 12:46:51,320 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2020-05-31 12:46:51,320 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2020-05-31 12:46:51,320 [INFO] Argument:278 - Argument : XferAbortCallbackvalue: null
+2020-05-31 12:46:51,321 [INFO] Argument:288 - Argument : XferAbortCallbackvalue: null
+2020-05-31 12:46:51,321 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2020-05-31 12:46:51,321 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2020-05-31 12:46:51,321 [INFO] Argument:278 - Argument : StreamBaseAddressvalue: null
+2020-05-31 12:46:51,321 [INFO] Argument:288 - Argument : StreamBaseAddressvalue: null
+2020-05-31 12:46:51,321 [INFO] Argument:278 - Argument : StreamIndexvalue: null
+2020-05-31 12:46:51,321 [INFO] Argument:288 - Argument : StreamIndexvalue: null
+2020-05-31 12:46:51,797 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\license.tmp_save
+2020-05-31 12:46:52,025 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\license.tmp
+2020-05-31 12:46:52,128 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\gpio.tmp_save
+2020-05-31 12:46:52,218 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\gpio.tmp
+2020-05-31 12:46:53,488 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 12:46:53,489 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for ADC
+2020-05-31 12:46:53,490 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 12:46:53,492 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 12:46:53,494 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for CORTEX_M7
+2020-05-31 12:46:53,495 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 12:46:53,505 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\cortex.tmp_save
+2020-05-31 12:46:53,587 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\cortex.tmp
+2020-05-31 12:46:53,590 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 12:46:53,592 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DAC
+2020-05-31 12:46:53,593 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 12:46:53,596 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 12:46:53,598 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2020-05-31 12:46:53,599 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 12:46:53,682 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma.tmp_save
+2020-05-31 12:46:53,768 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma.tmp
+2020-05-31 12:46:53,784 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma_GV.tmp_save
+2020-05-31 12:46:53,880 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\dma_GV.tmp
+2020-05-31 12:46:53,886 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 12:46:53,889 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for LPTIM
+2020-05-31 12:46:53,890 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 12:46:53,892 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 12:46:53,894 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-05-31 12:46:53,895 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 12:46:53,897 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-05-31 12:46:53,899 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2020-05-31 12:46:53,900 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 12:46:53,902 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-05-31 12:46:53,903 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-05-31 12:46:53,929 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_it.c_save
+2020-05-31 12:46:54,107 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_it.c
+2020-05-31 12:46:54,135 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_it.h_save
+2020-05-31 12:46:54,251 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_it.h
+2020-05-31 12:46:54,473 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_hal_msp.c_save
+2020-05-31 12:46:54,672 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\stm32h7xx_hal_msp.c
+2020-05-31 12:46:54,677 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\system.tmp_save
+2020-05-31 12:46:54,755 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\MXTmpFiles\system.tmp
+2020-05-31 12:46:54,777 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_hal_conf.h_save
+2020-05-31 12:46:54,921 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\stm32h7xx_hal_conf.h
+2020-05-31 12:46:55,005 [WARN] IPConfigManager:2701 - IP not found : TIM
+2020-05-31 12:46:55,006 [WARN] IPConfigManager:2701 - IP not found : gpio
+2020-05-31 12:46:55,007 [WARN] CodeGenerator:2649 - IP not found : TIM
+2020-05-31 12:46:55,007 [WARN] CodeGenerator:2649 - IP not found : gpio
+2020-05-31 12:46:55,034 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\main.h_save
+2020-05-31 12:46:55,218 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Inc\main.h
+2020-05-31 12:46:55,233 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\main.c_save
+2020-05-31 12:46:55,657 [INFO] CodeEngine:206 - Generated code: C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\Core\Src\main.c
+2020-05-31 12:46:57,292 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 865mS.
+2020-05-31 12:46:57,297 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-05-31 12:46:57,712 [INFO] ConfigFileManager:1066 - The Die is : DIE450
+2020-05-31 12:47:00,773 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 3476mS.
+2020-05-31 12:47:00,774 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-05-31 12:47:00,778 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-05-31 16:50:31,335 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 16:50:38,706 [INFO] CtxDoc:709 - title: ADC1; link: Reference manual 
+2020-05-31 16:50:50,007 [INFO] ServerAccessManage:348 - Download File RM0433.pdf
+2020-05-31 16:53:25,832 [INFO] LoadUrlFilesThread:134 - End of LoadUrlFiles Thread
+2020-05-31 16:53:25,832 [INFO] CtxDocViewerPdf:135 - Open pdf file: C:/Users/albytest/STM32Cube/Repository/\RM0433.pdf in chapter: Analog to digital converters (ADC)
+2020-05-31 17:01:49,848 [INFO] CtxDoc:709 - title: ADC1; link: Reference manual 
+2020-05-31 17:01:49,849 [INFO] CtxDocViewerPdf:135 - Open pdf file: C:/Users/albytest/STM32Cube/Repository/\RM0433.pdf in chapter: Analog to digital converters (ADC)
+2020-05-31 17:02:28,163 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,225 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,229 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,230 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,230 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,230 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,231 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,231 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,231 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,231 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,232 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,232 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,232 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,232 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,232 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,233 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,233 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,233 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,233 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,233 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,234 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,234 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,234 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:02:40,364 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:03:08,693 [INFO] CtxDoc:709 - title: ADC1; link: Reference manual 
+2020-05-31 17:03:08,694 [INFO] CtxDocViewerPdf:135 - Open pdf file: C:/Users/albytest/STM32Cube/Repository/\RM0433.pdf in chapter: Analog to digital converters (ADC)
+2020-05-31 17:04:27,519 [INFO] CtxDoc:709 - title: ADC1; link: Reference manual 
+2020-05-31 17:04:27,519 [INFO] CtxDocViewerPdf:135 - Open pdf file: C:/Users/albytest/STM32Cube/Repository/\RM0433.pdf in chapter: Analog to digital converters (ADC)
+2020-05-31 17:11:15,126 [INFO] CtxDoc:709 - title: ADC1; link: Reference manual 
+2020-05-31 17:11:15,126 [INFO] CtxDocViewerPdf:135 - Open pdf file: C:/Users/albytest/STM32Cube/Repository/\RM0433.pdf in chapter: Analog to digital converters (ADC)
+2020-05-31 17:11:52,798 [INFO] Activator:176 - 
+
+
+2020-05-31 17:11:52,806 [INFO] Activator:177 - !SESSION log4j initialized
+2020-05-31 17:12:14,018 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303
+2020-05-31 17:12:14,045 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/
+2020-05-31 17:12:14,053 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/boardmanager/
+2020-05-31 17:12:14,054 [INFO] DbMcus:235 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-05-31 17:12:14,055 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-05-31 17:12:14,076 [INFO] DbMcusAds:85 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,078 [INFO] DbMcusDocs:108 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,084 [INFO] DbMcusJson:61 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,086 [INFO] DbBoardsDocs:97 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,090 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,149 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-05-31 17:12:14,373 [INFO] RulesReader:52 - Compatibility file has been processed (208 Rules)
+2020-05-31 17:12:14,531 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_242
+2020-05-31 17:12:14,532 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/
+2020-05-31 17:12:14,532 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/boardmanager/
+2020-05-31 17:12:14,533 [INFO] DbMcus:235 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-05-31 17:12:14,535 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-05-31 17:12:14,536 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,537 [INFO] DbMcusAds:85 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,537 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,538 [INFO] DbMcusDocs:108 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,538 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,539 [INFO] DbMcusJson:61 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,540 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,541 [INFO] DbBoardsDocs:97 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,541 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,542 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,543 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,543 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,544 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-05-31 17:12:14,689 [INFO] MainPanel:181 - HeapMemory: 299892736
+2020-05-31 17:12:14,823 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/
+2020-05-31 17:12:14,824 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/boardmanager/
+2020-05-31 17:12:14,824 [INFO] DbMcus:235 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-05-31 17:12:14,825 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-05-31 17:12:14,826 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,827 [INFO] DbMcusAds:85 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,827 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,828 [INFO] DbMcusDocs:108 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,828 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,829 [INFO] DbMcusJson:61 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,830 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,830 [INFO] DbBoardsDocs:97 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,831 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,831 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/
+2020-05-31 17:12:14,832 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,832 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\albytest\.stmcufinder\plugins\mcufinder/ => C:\Users\albytest\.stmcufinder\plugins\mcufinder
+2020-05-31 17:12:14,833 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\albytest\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-05-31 17:12:14,867 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303
+2020-05-31 17:12:14,870 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, tutovideos]
+2020-05-31 17:12:14,873 [INFO] PluginManage:292 - Check plugin analytics
+2020-05-31 17:12:14,886 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-05-31 17:12:14,887 [INFO] PluginManage:292 - Check plugin clock
+2020-05-31 17:12:14,913 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-05-31 17:12:14,914 [INFO] PluginManage:292 - Check plugin ddr
+2020-05-31 17:12:14,920 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-05-31 17:12:14,921 [INFO] PluginManage:292 - Check plugin filemanager
+2020-05-31 17:12:15,347 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-05-31 17:12:15,347 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-05-31 17:12:15,366 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-05-31 17:12:15,367 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-05-31 17:12:15,391 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-05-31 17:12:15,392 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-05-31 17:12:15,447 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-05-31 17:12:15,448 [INFO] PluginManage:292 - Check plugin power
+2020-05-31 17:12:15,468 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-05-31 17:12:15,469 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-05-31 17:12:15,518 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-05-31 17:12:15,519 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-05-31 17:12:15,614 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (C:/Users/albytest/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 42 ms. number of Sw pack : 9
+2020-05-31 17:12:15,649 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-05-31 17:12:15,650 [INFO] PluginManage:292 - Check plugin tools
+2020-05-31 17:12:15,654 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-05-31 17:12:15,654 [INFO] PluginManage:292 - Check plugin tutovideos
+2020-05-31 17:12:15,656 [INFO] PluginManage:347 - Ignore plugin tutovideos (category:base)
+2020-05-31 17:12:15,656 [INFO] PluginManage:292 - Check plugin updater
+2020-05-31 17:12:15,695 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-05-31 17:12:15,696 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2020-05-31 17:12:16,054 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-05-31 17:12:16,194 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,196 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-05-31 17:12:16,200 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,201 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-05-31 17:12:16,205 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,205 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-05-31 17:12:16,209 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,210 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-05-31 17:12:16,214 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,215 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-05-31 17:12:16,220 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,221 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-05-31 17:12:16,231 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,232 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-05-31 17:12:16,235 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,236 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-05-31 17:12:16,244 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,244 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-05-31 17:12:16,254 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,255 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-05-31 17:12:16,258 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,259 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-05-31 17:12:16,264 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,264 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-05-31 17:12:16,272 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,273 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-05-31 17:12:16,281 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,281 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-05-31 17:12:16,286 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,287 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2020-05-31 17:12:16,293 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,294 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-05-31 17:12:16,299 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,300 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-05-31 17:12:16,304 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,305 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-05-31 17:12:16,310 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,311 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-05-31 17:12:16,313 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,314 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-05-31 17:12:16,320 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,321 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-05-31 17:12:16,327 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,328 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-05-31 17:12:16,334 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,335 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-05-31 17:12:16,343 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,343 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-05-31 17:12:16,359 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,367 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-05-31 17:12:16,371 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,372 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-05-31 17:12:16,379 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,380 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-05-31 17:12:16,387 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,388 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-05-31 17:12:16,394 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,395 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-05-31 17:12:16,405 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,407 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-05-31 17:12:16,412 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,412 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-05-31 17:12:16,421 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,422 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-05-31 17:12:16,428 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,429 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-05-31 17:12:16,435 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,436 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-05-31 17:12:16,440 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,441 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-05-31 17:12:16,446 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,447 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-05-31 17:12:16,460 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:16,461 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-05-31 17:12:17,179 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-05-31 17:12:17,180 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2020-05-31 17:12:17,464 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-05-31 17:12:17,983 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-05-31 17:12:17,991 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-05-31 17:12:17,993 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-05-31 17:12:18,004 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-05-31 17:12:18,005 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.3.0.202002181050\tools\bin
+2020-05-31 17:12:18,014 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.3.0.202002181050\tools\bin\STM32_Programmer_CLI.exe -l
+2020-05-31 17:12:18,670 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-05-31 17:12:18,670 [ERROR] IntegrityCheckThread:252 - Cannot obtain thirdParties list 21
+2020-05-31 17:12:18,671 [ERROR] IntegrityCheckThread:100 - Unexpected exception IntegrityCheckThread Thread: Updater error
+2020-05-31 17:12:18,672 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (C:/Users/albytest/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-05-31 17:12:19,215 [INFO] MainDdrPanel:93 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.3.0.202002181050\tools\bin
+2020-05-31 17:12:19,223 [INFO] Updater:886 - Updater Version found : 5.6.1
+2020-05-31 17:12:19,264 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303
+2020-05-31 17:12:19,657 [INFO] MainUpdater:2230 - connection check result : 10
+2020-05-31 17:12:19,659 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2020-05-31 17:12:19,660 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-05-31 17:12:19,765 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2020-05-31 17:12:19,902 [INFO] MainUpdater:2230 - connection check result : 10
+2020-05-31 17:12:20,104 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-05-31 17:12:20,106 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-05-31 17:12:20,115 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-05-31 17:12:20,116 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 246404544 Bytes (336592896)
+2020-05-31 17:12:20,118 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-05-31 17:12:20,118 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-05-31 17:12:20,119 [INFO] OpenFileManager:274 - Change cursor
+2020-05-31 17:12:39,190 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Rank) has Id (4#ChannelRegularConversion) currently not set
+2020-05-31 17:12:39,191 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Channel) has Id (4#ChannelRegularConversion) currently not set
+2020-05-31 17:12:39,191 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (SamplingTime) has Id (4#ChannelRegularConversion) currently not set
+2020-05-31 17:12:39,191 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (OffsetNumber) has Id (4#ChannelRegularConversion) currently not set
+2020-05-31 17:12:39,193 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC2) : Parameter (Rank) has Id (4#ChannelRegularConversion) currently not set
+2020-05-31 17:12:39,194 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC2) : Parameter (Channel) has Id (4#ChannelRegularConversion) currently not set
+2020-05-31 17:12:39,194 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC2) : Parameter (SamplingTime) has Id (4#ChannelRegularConversion) currently not set
+2020-05-31 17:12:39,194 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC2) : Parameter (OffsetNumber) has Id (4#ChannelRegularConversion) currently not set
+2020-05-31 17:12:39,196 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,197 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Request) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,197 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,197 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,198 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,198 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,199 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,199 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,199 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,200 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,200 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SignalID) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,200 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Polarity) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,200 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (RequestNumber) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,201 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncSignalID) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,201 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncPolarity) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,201 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncEnable) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,202 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (EventEnable) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,202 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncRequestNumber) has Id (DAC1_CH2) currently not set
+2020-05-31 17:12:39,202 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2020-05-31 17:12:39,202 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Request) has Id (ADC1) currently not set
+2020-05-31 17:12:39,202 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2020-05-31 17:12:39,203 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2020-05-31 17:12:39,203 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2020-05-31 17:12:39,203 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2020-05-31 17:12:39,203 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2020-05-31 17:12:39,203 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2020-05-31 17:12:39,204 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2020-05-31 17:12:39,204 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (ADC1) currently not set
+2020-05-31 17:12:39,204 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SignalID) has Id (ADC1) currently not set
+2020-05-31 17:12:39,204 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Polarity) has Id (ADC1) currently not set
+2020-05-31 17:12:39,204 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (RequestNumber) has Id (ADC1) currently not set
+2020-05-31 17:12:39,205 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncSignalID) has Id (ADC1) currently not set
+2020-05-31 17:12:39,205 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncPolarity) has Id (ADC1) currently not set
+2020-05-31 17:12:39,205 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncEnable) has Id (ADC1) currently not set
+2020-05-31 17:12:39,205 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (EventEnable) has Id (ADC1) currently not set
+2020-05-31 17:12:39,205 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (SyncRequestNumber) has Id (ADC1) currently not set
+2020-05-31 17:12:39,208 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (48MHZClocksFreq_Value)
+2020-05-31 17:12:39,209 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC12outputFreq_Value)
+2020-05-31 17:12:39,209 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC34outputFreq_Value)
+2020-05-31 17:12:39,209 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (AHBFreq_Value)
+2020-05-31 17:12:39,210 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (APB1CLKDivider)
+2020-05-31 17:12:39,210 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (APB1TimFreq_Value)
+2020-05-31 17:12:39,210 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (APB2CLKDivider)
+2020-05-31 17:12:39,210 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (APB2TimFreq_Value)
+2020-05-31 17:12:39,211 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (DFSDMAudioFreq_Value)
+2020-05-31 17:12:39,211 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (DFSDMFreq_Value) has invalid value (120000000)
+2020-05-31 17:12:39,218 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (EthernetFreq_Value)
+2020-05-31 17:12:39,219 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FCLKCortexFreq_Value)
+2020-05-31 17:12:39,219 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FDCANFreq_Value) has invalid value (240000000)
+2020-05-31 17:12:39,219 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FMPI2C1Freq_Value)
+2020-05-31 17:12:39,219 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2020-05-31 17:12:39,220 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (HPREFreq_Value)
+2020-05-31 17:12:39,220 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2C1Freq_Value)
+2020-05-31 17:12:39,220 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2C2Freq_Value)
+2020-05-31 17:12:39,220 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2C3Freq_Value)
+2020-05-31 17:12:39,221 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2S1Freq_Value)
+2020-05-31 17:12:39,221 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2S2Freq_Value)
+2020-05-31 17:12:39,221 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2SClocksFreq_Value)
+2020-05-31 17:12:39,221 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2SFreq_Value)
+2020-05-31 17:12:39,222 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (MCOFreq_Value)
+2020-05-31 17:12:39,222 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLCLKFreq_Value)
+2020-05-31 17:12:39,222 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLI2SPCLKFreq_Value)
+2020-05-31 17:12:39,222 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLI2SQCLKFreq_Value)
+2020-05-31 17:12:39,222 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLI2SQoutputFreq_Value)
+2020-05-31 17:12:39,223 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLI2SRCLKFreq_Value)
+2020-05-31 17:12:39,223 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLI2SRoutputFreq_Value)
+2020-05-31 17:12:39,223 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLI2SoutputFreq_Value)
+2020-05-31 17:12:39,223 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLM)
+2020-05-31 17:12:39,223 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMCOFreq_Value)
+2020-05-31 17:12:39,224 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMUL)
+2020-05-31 17:12:39,224 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLN)
+2020-05-31 17:12:39,224 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLQ)
+2020-05-31 17:12:39,224 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLQCLKFreq_Value)
+2020-05-31 17:12:39,225 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLQoutputFreq_Value)
+2020-05-31 17:12:39,225 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLRCLKFreq_Value)
+2020-05-31 17:12:39,225 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLRoutputFreq_Value)
+2020-05-31 17:12:39,225 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLSAIPCLKFreq_Value)
+2020-05-31 17:12:39,225 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLSAIQCLKFreq_Value)
+2020-05-31 17:12:39,226 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLSAIoutputFreq_Value)
+2020-05-31 17:12:39,226 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PRESCALERUSB)
+2020-05-31 17:12:39,226 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PWRFreq_Value)
+2020-05-31 17:12:39,227 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (RTCHSEDivFreq_Value)
+2020-05-31 17:12:39,227 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (SAI2Freq_Value)
+2020-05-31 17:12:39,227 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (SDIOFreq_Value)
+2020-05-31 17:12:39,228 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (SDMMC2Freq_Value)
+2020-05-31 17:12:39,228 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (SYSCLKSourceVirtual)
+2020-05-31 17:12:39,228 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM15Freq_Value)
+2020-05-31 17:12:39,228 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM16Freq_Value)
+2020-05-31 17:12:39,228 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM17Freq_Value)
+2020-05-31 17:12:39,229 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM1Freq_Value)
+2020-05-31 17:12:39,229 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM20Freq_Value)
+2020-05-31 17:12:39,229 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2020-05-31 17:12:39,229 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM3Freq_Value)
+2020-05-31 17:12:39,229 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM8Freq_Value)
+2020-05-31 17:12:39,230 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (UART4Freq_Value)
+2020-05-31 17:12:39,230 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (UART5Freq_Value)
+2020-05-31 17:12:39,230 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (UART7Freq_Value)
+2020-05-31 17:12:39,230 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (UART8Freq_Value)
+2020-05-31 17:12:39,230 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USART1Freq_Value)
+2020-05-31 17:12:39,231 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USART2Freq_Value)
+2020-05-31 17:12:39,231 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USART3Freq_Value)
+2020-05-31 17:12:39,231 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USART6Freq_Value)
+2020-05-31 17:12:39,231 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (240000000)
+2020-05-31 17:12:39,241 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOI2SInputFreq_Value)
+2020-05-31 17:12:39,241 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOI2SOutputFreq_Value)
+2020-05-31 17:12:39,244 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOInputFreq_Value)
+2020-05-31 17:12:39,244 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOInputMFreq_Value)
+2020-05-31 17:12:39,244 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOOutput2Freq_Value)
+2020-05-31 17:12:39,244 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOOutputFreq_Value)
+2020-05-31 17:12:39,245 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOSAIOutputFreq_Value)
+2020-05-31 17:12:39,245 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VcooutputI2S)
+2020-05-31 17:12:42,643 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 334939008 Bytes (484442112)
+2020-05-31 17:12:42,646 [INFO] DbMcusXml:110 - Load MCU database from C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/families.xml
+2020-05-31 17:12:44,550 [INFO] DbMcusJson:90 - JSON generation date=Wed May 20 17:34:35 CEST 2020 (1589988875)
+2020-05-31 17:12:46,533 [INFO] DbMcus:171 - Found 1670 MCUs (1625 are supported by CubeMX, 1625 are visible in CubeMX)
+2020-05-31 17:12:46,535 [INFO] ApiDb:158 - Load user favorites file C:\Users\albytest/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2020-05-31 17:12:46,535 [INFO] ApiDb:163 - User favorites MCUs=[]
+2020-05-31 17:12:46,535 [INFO] DbMcus:183 - Set 0 / 0 favorites MCUs
+2020-05-31 17:12:46,570 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (C:/Users/albytest/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 15 ms. number of Sw pack : 9
+2020-05-31 17:12:46,603 [INFO] DependencyParser:785 - This component is not compatible with the current MCU : [1586799626645]
+2020-05-31 17:12:46,604 [INFO] ThirdPartyModel:521 - Component with status : MCU_INCOMPATIBLE for condition : OS Tick GTIM id : 1586799625972
+2020-05-31 17:12:46,605 [INFO] DependencyParser:785 - This component is not compatible with the current MCU : [1586799629221, 1586799626728]
+2020-05-31 17:12:47,073 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.1.0
+2020-05-31 17:12:47,074 [INFO] ThirdParty:899 - CMSIS Pack Vendor :ARM CMSIS 5.6.0
+2020-05-31 17:12:47,074 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.13.0
+2020-05-31 17:12:47,074 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.2
+2020-05-31 17:12:47,074 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.1.0
+2020-05-31 17:12:47,074 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-05-31 17:12:47,075 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.2.0
+2020-05-31 17:12:47,075 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.0.0
+2020-05-31 17:12:48,768 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-05-31 17:12:48,773 [INFO] PinOutPanel:1420 - setPackage(STM32H743ZITx,LQFP144)
+2020-05-31 17:12:50,889 [INFO] UtilMem:74 - Before build in PCC Used Memory: 380275896 Bytes (530579456)
+2020-05-31 17:12:51,830 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/albytest/.stm32cubemx/plugins/power
+2020-05-31 17:12:51,940 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/albytest/.stm32cubemx/plugins/power
+2020-05-31 17:12:52,057 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/albytest/.stm32cubemx/plugins/power
+2020-05-31 17:12:52,075 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/albytest/.stm32cubemx/plugins/power
+2020-05-31 17:12:52,544 [INFO] UtilMem:74 - After build in PCC Used Memory: 454186384 Bytes (530579456)
+2020-05-31 17:12:52,874 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,874 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,875 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,875 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,876 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,876 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,877 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,877 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,878 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,878 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,878 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,879 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,879 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,879 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,879 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,880 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,880 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,880 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,881 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,881 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,882 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,882 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,882 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,884 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,884 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,885 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,885 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,885 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,886 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,886 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,887 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,887 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,888 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,889 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,890 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,890 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,891 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,891 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,891 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,892 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,892 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,893 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,893 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,894 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,894 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,895 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,895 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,896 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,896 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,896 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,897 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,897 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,897 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,898 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,898 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,898 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,899 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,899 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,899 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,900 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,900 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,900 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,901 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,901 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,902 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,902 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,902 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,903 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,903 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,903 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,904 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,904 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,904 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,905 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,914 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,915 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,916 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,916 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,917 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,917 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,917 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,918 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,918 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,919 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,919 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,919 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,920 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,920 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,921 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,921 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,922 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,922 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,923 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,923 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,923 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:52,924 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-05-31 17:12:53,015 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-05-31 17:12:53,196 [INFO] OpenFileManager:294 - Restore cursor
+2020-05-31 17:13:05,946 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-05-31 17:13:10,341 [INFO] DbMcusDocs:142 - JSON generation date=Wed May 20 17:34:35 CEST 2020 (1589988875)
+2020-05-31 17:13:10,535 [INFO] DbMcusDocs:77 - Found 580 MCUs documents
+2020-05-31 17:13:14,347 [INFO] CtxDoc:709 - title: ADC1; link: Reference manual 
+2020-05-31 17:13:23,635 [INFO] CtxDocViewerPdf:135 - Open pdf file: C:/Users/albytest/STM32Cube/Repository/\RM0433.pdf in chapter: Analog to digital converters (ADC)
+2020-05-31 17:13:40,839 [INFO] CtxDoc:709 - title: ADC1; link: Reference manual 
+2020-05-31 17:13:46,203 [INFO] ServerAccessManage:348 - Download File RM0433.pdf
+2020-05-31 17:14:53,046 [INFO] LoadUrlFilesThread:134 - End of LoadUrlFiles Thread
+2020-05-31 17:14:53,050 [INFO] CtxDocViewerPdf:135 - Open pdf file: C:/Users/albytest/STM32Cube/Repository/\RM0433.pdf in chapter: Analog to digital converters (ADC)
+2020-05-31 17:14:56,154 [INFO] CtxDocViewerPdf:169 - item Analog-to-digital converters (ADC) is on page 918
+2020-05-31 17:14:56,155 [INFO] CtxDocViewerPdf:196 - Opening file: C:/Users/albytest/STM32Cube/Repository/\RM0433.pdf at page: 918

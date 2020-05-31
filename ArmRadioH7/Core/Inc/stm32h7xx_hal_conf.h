@@ -60,7 +60,7 @@
 /* #define HAL_I2S_MODULE_ENABLED   */
 /* #define HAL_SMBUS_MODULE_ENABLED   */
 /* #define HAL_IWDG_MODULE_ENABLED   */
-/* #define HAL_LPTIM_MODULE_ENABLED   */
+#define HAL_LPTIM_MODULE_ENABLED
 /* #define HAL_LTDC_MODULE_ENABLED   */
 /* #define HAL_QSPI_MODULE_ENABLED   */
 /* #define HAL_RNG_MODULE_ENABLED   */
