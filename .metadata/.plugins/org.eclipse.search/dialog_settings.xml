@@ -25,8 +25,61 @@
 		<item key="WHOLE_WORD" value="false"/>
 		<item key="SEARCH_DERIVED" value="false"/>
 		<item key="SEARCH_IN_BINARIES" value="false"/>
-		<item key="HISTORY_SIZE" value="11"/>
+		<item key="HISTORY_SIZE" value="12"/>
 		<section name="HISTORY0">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="HAL_UART_RxCpltCallback"/>
+			<item key="scope" value="0"/>
+			<list key="fileNamePatterns">
+				<item value="*.c"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="EXTENSIONS">
+			<item key="0" value="*.c"/>
+			<item key="1" value="*"/>
+			<item key="2" value="syscall.c"/>
+		</section>
+		<section name="HISTORY1">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="RxCpltCallback"/>
+			<item key="scope" value="0"/>
+			<list key="fileNamePatterns">
+				<item value="*.c"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY2">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="50000"/>
+			<item key="scope" value="0"/>
+			<list key="fileNamePatterns">
+				<item value="*.c"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY3">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="calibration"/>
+			<item key="scope" value="0"/>
+			<list key="fileNamePatterns">
+				<item value="*.c"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY4">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -38,12 +91,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="EXTENSIONS">
-			<item key="0" value="*"/>
-			<item key="1" value="syscall.c"/>
-			<item key="2" value="*.c"/>
-		</section>
-		<section name="HISTORY1">
+		<section name="HISTORY5">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -55,7 +103,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY2">
+		<section name="HISTORY6">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -67,7 +115,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY3">
+		<section name="HISTORY7">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -79,7 +127,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY4">
+		<section name="HISTORY8">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -91,7 +139,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY5">
+		<section name="HISTORY9">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -103,7 +151,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY6">
+		<section name="HISTORY10">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -115,7 +163,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY7">
+		<section name="HISTORY11">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -123,42 +171,6 @@
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY8">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value=""/>
-			<item key="scope" value="0"/>
-			<list key="fileNamePatterns">
-				<item value="syscall.c"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY9">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="tcm"/>
-			<item key="scope" value="0"/>
-			<list key="fileNamePatterns">
-				<item value="*.c"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY10">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ccm"/>
-			<item key="scope" value="0"/>
-			<list key="fileNamePatterns">
-				<item value="*.c"/>
 			</list>
 			<list key="workingSets">
 			</list>
@@ -182,5 +194,8 @@
 	</section>
 	<section name="org.eclipse.cdt.ui.pdomSearchViewPage">
 		<item key="showEnclosingDefinitions" value="true"/>
+	</section>
+	<section name="">
+		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
 	</section>
 </section>

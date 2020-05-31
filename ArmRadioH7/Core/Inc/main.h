@@ -191,8 +191,7 @@ void MX_TIM6_Init_Custom_Rate(void);
 #define myPI         3.14159265358979f
 #define TWOPI        (2.f*myPI)
 #define CWPITCH      650.f
-#define SAMPLINGRATE 1785714.286f
-#define RATEOUT      (SAMPLINGRATE/64)
+
 
 
 

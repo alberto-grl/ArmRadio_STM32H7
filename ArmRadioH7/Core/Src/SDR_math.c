@@ -205,7 +205,7 @@ void  SDR_mirror_LSB(float* buf, uint32_t blockSize)
 void SDR_compute_IIR_parms(void)
 {
    float r, r2, wr, cosw0;
-	 float rate = RATEOUT;
+	 float rate = SamplingRate/256; //SamplingRate / decimation
 
    r = Qfactor;
 

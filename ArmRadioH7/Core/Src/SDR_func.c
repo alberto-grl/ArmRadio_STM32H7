@@ -203,7 +203,7 @@ void SetFstep(int idx)
 void FplusClicked()
 {	
 	LOfreq += Fstep;
-  LOfreq  = min(LOfreq, 10000000.f);
+  LOfreq  = min(LOfreq, 50000000.f);
   psets[0].freq = LOfreq; psets[0].mode = CurrentMode;
   psets[0].bw = bw[CurrentMode];
   Tune_Preset(0);  // preset 0 means "User tuning"
