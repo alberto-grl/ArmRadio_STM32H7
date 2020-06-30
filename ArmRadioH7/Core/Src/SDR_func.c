@@ -251,7 +251,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t pin)
   short  *p;
   static uint8_t Idx = 1;
 
-  if (pin == USER_Btn_Pin)
+  if (pin == GPIO_PIN_13)
   {
 //	  if(EXTI_GetITStatus(EXTI_Line0) != RESET)
 	  {

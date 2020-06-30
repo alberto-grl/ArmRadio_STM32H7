@@ -1,20 +1,10 @@
-18:18:41 **** Incremental Build of configuration Debug for project ArmRadioH7 ****
+15:40:38 **** Incremental Build of configuration Debug for project ArmRadioH7 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DARM_MATH_CM7 -DSTM32H743xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc -IC:/Users/albytest/STM32Cube/Repository/STM32Cube_FW_H7_V1.7.0/Drivers/CMSIS/DSP/Include -Ofast -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "ArmRadioH7.elf" @"objects.list"  -l"arm_cortexM7lfsp_math" -mcpu=cortex-m7 -T"C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\STM32H743ZITX_FLASH-DTCM.ld" --specs=nosys.specs -Wl,-Map="ArmRadioH7.map" -Wl,--gc-sections -static -L"C:\Users\albytest\STM32Cube\Repository\STM32Cube_FW_H7_V1.7.0\Drivers\CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ArmRadioH7.elf
- 
-arm-none-eabi-objdump -h -S  ArmRadioH7.elf  > "ArmRadioH7.list"
-arm-none-eabi-objcopy  -O binary  ArmRadioH7.elf  "ArmRadioH7.bin"
 arm-none-eabi-size   ArmRadioH7.elf 
    text	   data	    bss	    dec	    hex	filename
- 123404	  62436	  55400	 241240	  3ae58	ArmRadioH7.elf
+ 124140	  62436	  55496	 242072	  3b198	ArmRadioH7.elf
 Finished building: default.size.stdout
  
-Finished building: ArmRadioH7.list
- 
-Finished building: ArmRadioH7.bin
- 
 
-18:18:49 Build Finished. 0 errors, 0 warnings. (took 8s.206ms)
+15:40:39 Build Finished. 0 errors, 0 warnings. (took 1s.211ms)
 

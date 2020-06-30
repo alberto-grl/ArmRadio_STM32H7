@@ -3,11 +3,11 @@
 ***                                                                          ***
 ***                                                                          ***
 ***                       AC Analysis of Input Filter                        ***
-***                           29/05/2020 16:07:53                            ***
+***                           20/06/2020 11:57:33                            ***
 ********************************************************************************
 Limits
 ======
-Frequency Range          Log 10e6, 3000k
+Frequency Range          Log 30e6, 1000k
 Number of Points         1001
 Temperature              Linear 27
 Maximum Change %         5
@@ -35,8 +35,8 @@ Node         Voltage  Node         Voltage  Node         Voltage
 
 DC Operating Point Inductor Current
 ===================================
-Inductor     Current  Inductor     Current  Inductor     Current 
-L1            0.000   L2            0.000   L3            0.000  
+Inductor     Current 
+L1            0.000  
 
 
 Operating Point for Devices of Type Resistor
@@ -57,31 +57,31 @@ tc2                  0.000         0.000
 
 Operating Point for Devices of Type Inductor
 ============================================
-Instance:                L1            L2            L3
-V                    0.000         0.000         0.000 
+Instance:                L1
+V                    0.000 
 Power DC Terms:
-PS                   0.000         0.000         0.000 
+PS                   0.000 
 
 DC Pin Currents:
-Il                   0.000         0.000         0.000 
+Il                   0.000 
 
 Device Variables:
-ic                   0.000         0.000         0.000 
+ic                   0.000 
 
 
 
 Operating Point for Devices of Type Capacitor
 =============================================
-Instance:                C1            C2            C3
-V                    0.000         0.000         0.000 
+Instance:                C1
+V                    0.000 
 Power DC Terms:
-PS                   0.000         0.000         0.000 
+PS                   0.000 
 
 DC Pin Currents:
-Ic                   0.000         0.000         0.000 
+Ic                   0.000 
 
 Device Variables:
-ic                   0.000         0.000         0.000 
+ic                   0.000 
 
 
 
