@@ -174,9 +174,9 @@ void MX_TIM6_Init_Custom_Rate(void);
 //TODO 500 128 seems to be bad
 //#define CLK_500M_CPU_120M_ADC
 //#define CLK_500M_CPU_128M_ADC
-//#define CLK_480M_CPU_120M_ADC
+#define CLK_480M_CPU_120M_ADC
 //#define CLK_600M_CPU_60M_ADC
-#define CLK_600M_CPU_160M_ADC
+//#define CLK_600M_CPU_160M_ADC
 
 #define BSIZE        (512)
 #define FFTLEN       (BSIZE*2)

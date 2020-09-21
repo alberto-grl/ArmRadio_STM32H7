@@ -46,6 +46,9 @@
   FFT Filters https://www.danvillesignal.com/images/pdfs/compdsp_Borgerding_FFT_slides2.pdf http://dsp-book.narod.ru/DSPMW/08.PDF
   Measuring inductance https://daycounter.com/Articles/How-To-Measure-Inductance.phtml
   RF Filters https://rf-tools.com/lc-filter/
+
+
+  MCO2 output is pin PC9, CN8 pin 4.
  */
 
 #define IN_MAIN
@@ -297,13 +300,17 @@ int main(void)
 	HAL_DAC_Start_DMA(&hdac1, DAC_CHANNEL_2, (uint32_t*)AudioOut, BSIZE * 2, DAC_ALIGN_12B_R);
 	///////
 
-
-
-
+/*		 __HAL_RCC_PLL2_DISABLE();
+		__HAL_RCC_PLL2_CONFIG(4, 144, 24, 2, 2);
+		 __HAL_RCC_PLL2_ENABLE();
+		 __HAL_RCC_PLL2FRACN_CONFIG(1013); // 0-8191, can be issued at any time
+*/
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+		 SetFOut(20006500);
+
 	while (1)
 	{
     /* USER CODE END WHILE */
@@ -817,7 +824,7 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = GPIO_PIN_9;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   GPIO_InitStruct.Alternate = GPIO_AF0_MCO;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
@@ -889,18 +896,26 @@ void HAL_DACEx_ConvCpltCallbackCh2(DAC_HandleTypeDef *hdac)
 {
 	ValidAudioHalf = &AudioOut[BSIZE];
 	LED_RED_ON;
+
+	//	 __HAL_RCC_PLL2_DISABLE();
+	//	__HAL_RCC_PLL2_CONFIG(4, 240, 16, 2, 2);
+	//	 __HAL_RCC_PLL2_ENABLE();
+
 }
 
 void HAL_DACEx_ConvHalfCpltCallbackCh2(DAC_HandleTypeDef *hdac)
 {
 	ValidAudioHalf = &AudioOut[0];
 	LED_RED_OFF;
+	//	 __HAL_RCC_PLL2_DISABLE();
+	//	 __HAL_RCC_PLL2_CONFIG(4, 120, 16, 2, 2);
+	//	 __HAL_RCC_PLL2_ENABLE();
 }
 
 void SystemClock_Config_For_OC(void)
 
 {
-	/* MCO2 is not correctly initialized by CubeMX if LPTIM or another periferal is not enabled with the
+	/* MCO2 is not correctly initialized by CubeMX if LPTIM or another peripheral is not enabled with the
 	* clock from the same PLL as MCO2.
 	*/
 
@@ -1038,7 +1053,10 @@ void SystemClock_Config_For_OC(void)
 		Error_Handler();
 	}
 
-	HAL_RCC_MCOConfig(RCC_MCO2, RCC_MCO2SOURCE_PLL2PCLK, RCC_MCODIV_10);
+	HAL_RCC_MCOConfig(RCC_MCO2, RCC_MCO2SOURCE_PLL2PCLK, RCC_MCODIV_1);
+
+//	  HAL_RCC_MCOConfig(RCC_MCO2, RCC_MCO2SOURCE_HSE, RCC_MCODIV_3);
+//	  HAL_RCC_MCOConfig(RCC_MCO2, RCC_MCO2SOURCE_SYSCLK, RCC_MCODIV_10);
 }
 
 void UserInput(void)
@@ -1221,7 +1239,29 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *UartHandle)
 	LED_RED_OFF;
 }
 
+void SetFOut(uint32_t FHz)
+{
+volatile uint32_t DivN2, FracN2;
 
+
+/* FOut = FXtal * M / N / P / MCODIV
+FXtal = 8 MHz
+
+Local oscillator is 10.7 - 40.7 MHz
+
+MCODIV = 1
+M = 4
+P = 24
+MCODIV = 1
+*/
+	DivN2 = (((uint64_t)FHz * 24 * 4 * 0x2000) / (uint64_t)8000000) >> 13;
+	FracN2 = (((uint64_t)FHz * 24 * 4* 0x2000) / (uint64_t)8000000) & 0x1FFF;
+
+	__HAL_RCC_PLL2_DISABLE();
+	__HAL_RCC_PLL2_CONFIG(4, DivN2, 24, 2, 2);
+	 __HAL_RCC_PLL2_ENABLE();
+	 __HAL_RCC_PLL2FRACN_CONFIG(FracN2); // 0-8191, can be issued at any time
+}
 
 
 /* USER CODE END 4 */
