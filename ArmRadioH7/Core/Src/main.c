@@ -309,7 +309,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-		 SetFOut(20006500);
+		 SetFOut(11000000);
 
 	while (1)
 	{
@@ -954,9 +954,11 @@ void SystemClock_Config_For_OC(void)
 	RCC_OscInitStruct.PLL.PLLFRACN = 0;
 
 
-
+#ifdef USE_EXTERNAL_OSCILLATOR
+	RCC_OscInitStruct.HSEState = RCC_HSE_BYPASS; // External clock on pin 29 CN 11 (PF0/PH0)
+#else
 	RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-	//RCC_OscInitStruct.HSEState = RCC_HSE_BYPASS; // External clock on pin 29 CN 11 (PF0/PH0)
+#endif
 	RCC_OscInitStruct.HSEState = RCC_HSE_ON; //Xtal oscillator
 	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
 	RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;

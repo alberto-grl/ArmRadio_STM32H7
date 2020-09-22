@@ -169,6 +169,9 @@ void MX_TIM6_Init_Custom_Rate(void);
 
 #define USE_DCACHE
 
+// Uncomment for external 8 MHz clock instead of internal xtal oscillator
+//#define USE_EXTERNAL_OSCILLATOR
+
 // Select CPU and ADC Clock. Uncomment only one at a time
 //#define CLK_600M_CPU_150M_ADC
 //TODO 500 128 seems to be bad

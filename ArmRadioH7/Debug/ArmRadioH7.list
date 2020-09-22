@@ -41,13 +41,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  18 .debug_macro  0003a73d  00000000  00000000  000abd80  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .debug_line   0001a1f8  00000000  00000000  000e64bd  2**0
+ 19 .debug_line   0001a1f3  00000000  00000000  000e64bd  2**0
                   CONTENTS, READONLY, DEBUGGING
- 20 .debug_str    0017a8bc  00000000  00000000  001006b5  2**0
+ 20 .debug_str    0017a8c8  00000000  00000000  001006b0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 21 .comment      000000e9  00000000  00000000  0027af71  2**0
+ 21 .comment      000000e9  00000000  00000000  0027af78  2**0
                   CONTENTS, READONLY
- 22 .debug_frame  00005214  00000000  00000000  0027b05c  2**2
+ 22 .debug_frame  00005214  00000000  00000000  0027b064  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -6393,7 +6393,7 @@ void Error_Handler(void)
  80031ee:	4d74      	ldr	r5, [pc, #464]	; (80033c0 <main+0x840>)
 	sprintf((char*)UartTXString, "S %-4.1f\r", SValue);
  80031f0:	4c74      	ldr	r4, [pc, #464]	; (80033c4 <main+0x844>)
-		 SetFOut(20006500);
+		 SetFOut(11000000);
  80031f2:	4875      	ldr	r0, [pc, #468]	; (80033c8 <main+0x848>)
  80031f4:	f7ff fbb6 	bl	8002964 <SetFOut>
 			volume += 0.1;
@@ -6580,7 +6580,7 @@ void Error_Handler(void)
  80033bc:	24008750 	.word	0x24008750
  80033c0:	240029b4 	.word	0x240029b4
  80033c4:	24007520 	.word	0x24007520
- 80033c8:	01314664 	.word	0x01314664
+ 80033c8:	00a7d8c0 	.word	0x00a7d8c0
  80033cc:	24004308 	.word	0x24004308
  80033d0:	0801af44 	.word	0x0801af44
  80033d4:	240004e8 	.word	0x240004e8

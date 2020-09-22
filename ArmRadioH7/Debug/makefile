@@ -40,8 +40,8 @@ ArmRadioH7.bin \
 all: ArmRadioH7.elf secondary-outputs
 
 # Tool invocations
-ArmRadioH7.elf: $(OBJS) $(USER_OBJS) C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\STM32H743ZITX_FLASH-DTCM.ld
-	arm-none-eabi-gcc -o "ArmRadioH7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\albytest\STM32CubeIDE\workspaceArmRadioH7\ArmRadioH7\STM32H743ZITX_FLASH-DTCM.ld" --specs=nosys.specs -Wl,-Map="ArmRadioH7.map" -Wl,--gc-sections -static -L"C:\Users\albytest\STM32Cube\Repository\STM32Cube_FW_H7_V1.7.0\Drivers\CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+ArmRadioH7.elf: $(OBJS) $(USER_OBJS) C:\Users\alberto\STM32CubeIDE\workspace_1.3.0\ArmRadio_STM32H7\ArmRadioH7\STM32H743ZITX_FLASH-DTCM.ld
+	arm-none-eabi-gcc -o "ArmRadioH7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\alberto\STM32CubeIDE\workspace_1.3.0\ArmRadio_STM32H7\ArmRadioH7\STM32H743ZITX_FLASH-DTCM.ld" --specs=nosys.specs -Wl,-Map="ArmRadioH7.map" -Wl,--gc-sections -static -L"C:\Users\alberto\STM32Cube\Repository\STM32Cube_FW_H7_V1.7.0\Drivers\CMSIS/Lib/GCC" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
